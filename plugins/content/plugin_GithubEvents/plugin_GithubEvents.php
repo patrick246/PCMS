@@ -45,6 +45,23 @@ class plugin_GithubEvents extends Plugin
 				case 'CreateEvent':
 					$message = '...erstellte ein' . (($event->payload->ref_type == 'branch' || $event->payload->ref_type == 'tag')?'en ':' ') . ucfirst($event->payload->ref_type) . ', ' . $this->getCreatedLink($event);
 					break;
+				case 'IssuesEvent':
+					//echo varDump($event->payload->issue);
+					{
+						if($event->payload->action === 'opened' || $event->payload->action === 'closed')
+						{
+							$message = '...' . (($event->payload->action === 'opened') ? 'öffnete' : 'schloss') . ' das Problem ' . $this->getIssueLink($event->payload->issue) . ' im Repo ' . $this->getRepoLink($event);
+						}
+						elseif ($event->payload->action === 'reopened') 
+						{
+							$message = '...öffnete das Problem ' . $this->getIssueLink($event->payload->issue) . ' im Repo ' . $this->getRepoLink($event) . ' wieder';
+						}
+						else 
+						{
+							$message = 'Nicht implementierter IssuesEvent-Typ: ' . $event->payload->action;
+						}
+					}
+					break;
 				default:
 					$message = 'Nicht implementierter Eventtyp: ' . $event->type;
 			}
@@ -75,6 +92,11 @@ class plugin_GithubEvents extends Plugin
 		{
 			
 		}
+	}
+	
+	private function getIssueLink($issue)
+	{
+		return sprintf('<a href="%s">#%d</a>', $issue->html_url, $issue->number);
 	}
 	
 	private function getCommitCommentLink($event)
