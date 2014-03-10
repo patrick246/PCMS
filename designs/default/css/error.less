@@ -1,0 +1,65 @@
+
+@container-border-color: #555;
+@background-color: #80C0FF;
+@line-color: lighten(@background-color, 5%);
+
+@font-face {
+  font-family: 'Coda Caption';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Coda Caption Heavy'), local('CodaCaption-Heavy'), url(http://themes.googleusercontent.com/static/fonts/codacaption/v5/YDl6urZh-DUFhiMBTgAnz2pVmE9oLybi4D_AN-2K110.woff) format('woff');
+}
+
+body
+{
+	background-image: url('../img/bg2.png');
+	font-family: sans-serif;
+	
+	margin: 0;
+	padding: 0;
+}
+
+.container
+{
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 1024px;
+	padding: 15px;
+	
+	background-color: white;
+	box-shadow: 0 0 10px 10px #444;
+}
+
+/*********************
+ **** Normal tags ****
+ *********************/
+
+h1
+{
+	font-family: 'Coda Caption';	
+}
+
+h2
+{
+	font-family: 'Coda Caption';
+	border-bottom: 1px solid @line-color;
+	margin-top: 0;
+}
+
+a
+{
+	color: #36c;
+	border-bottom: 1px dotted #36c;
+	text-decoration: none;
+	
+	&:visited
+	{
+		color: #039;
+	}
+}
+
+hr
+{
+	border: none;
+	border-bottom: 1px solid @line-color;
+}

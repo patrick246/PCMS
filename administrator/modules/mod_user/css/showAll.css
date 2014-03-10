@@ -1,0 +1,12 @@
+.mod_user_table
+{
+	width: 100%;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.mod_user_table tr, .mod_user_table td, .mod_user_table th
+{
+	border: 1px solid black;
+	border-collapse: collapse;
+}

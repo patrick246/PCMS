@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+.mod_article_info
+{
+	font-size: 11pt;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+}
+
+.mod_article_entry
+{
+	margin-bottom: 25px;
+	margin-top: 25px;
+}

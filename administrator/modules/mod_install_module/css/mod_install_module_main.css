@@ -1,0 +1,25 @@
+table.mod_dashboard_active_user, 
+table.mod_dashboard_active_user tr, 
+table.mod_dashboard_active_user tr td, 
+table.mod_dashboard_active_user tr th
+{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table.mod_dashboard_active_user
+{
+	padding: 5px;
+	width: 50%;
+}
+
+table.mod_dashboard_active_user tr td
+{
+	padding: 5px;
+}
+table.mod_dashboard_active_user tr th
+{
+	background-color: grey;
+	color: white;
+	font-weight: bold;
+}

@@ -1,0 +1,158 @@
+html, body
+{
+	margin: 0;
+	padding: 0;
+	font-size: 14pt;
+}
+
+header
+{
+	height: 250px;
+	background-color: #3cf;
+	color: #FFF;
+	/*background-image: url('../img/bg_header.jpg');*/
+}
+
+.overlay_header
+{
+	/*background-color: rgba(50,50,50,0.5);*/
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(50,50,50,0.5) 25%, rgba(50,50,50,0.9) 100%);
+	background-image: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(50,50,50,0.5) 25%, rgba(50,50,50,0.9) 100%);
+	background-image: -o-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(50,50,50,0.5) 25%, rgba(50,50,50,0.9) 100%);
+	background-image: linear-gradient(left, rgba(0,0,0,0) 0%, rgba(50,50,50,0.5) 25%, rgba(50,50,50,0.9) 100%);
+	height: inherit;
+}
+
+.container
+{
+	margin: 0 auto;
+	width: 1100px;
+	overflow: auto;
+}
+
+.pagetitle
+{
+	font-size: 65pt;
+	text-align: center;
+	font-family: sans-serif;
+	padding: 0;
+	/*text-shadow:
+    0 0 20px #fefcc9,
+    10px -10px 30px #feec85,
+    -20px -20px 40px #ffae34,
+    20px -40px 50px #ec760c,
+    -20px -60px 60px #cd4606,
+    0 -80px 70px #973716,
+    10px -90px 80px #451b0e;*/
+    text-shadow: 5px 5px 3px rgba(50,50,50,1);
+    color: #FFF;
+}
+
+nav
+{
+	background-color: #ECE9E5;
+	overflow: auto;
+	border-top: 1px solid #CCC9C5;
+	border-bottom: 1px solid #CCC9C5;
+}
+
+nav ul
+{
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+
+nav li
+{
+	list-style-type: none;
+	float: left;
+	border-left: 1px solid #CCC9C5;
+}
+
+nav li a
+{
+	padding: 15px 20px;
+	display: block;
+	color: black;
+	font-size: 14pt;
+	text-decoration: none;
+}
+
+nav li a:hover
+{
+	background-color: #DCD9D5;
+	color: black;
+	text-decoration: none;
+}
+
+nav li:last-child a
+{
+	border-right: 1px solid #CCC9C5;
+}
+
+.middle
+{
+	background-color: #FCF9F5;
+	padding: 25px 0;
+}
+
+.sidebar_right
+{
+	float: right;
+	width: 300px;
+	padding-left: 15px;
+	border-left: 1px solid #CCC9C5;
+	min-height: 50px;
+}
+
+.sidebar_box1
+{
+	padding-bottom: 15px;
+	border-bottom: 1px solid #CCC9C5;
+}
+
+.content
+{
+	float: left;
+	width: 700px;
+	padding: 15px;
+}
+
+.footer
+{
+	background-color: #BCB9B5;
+	padding: 15px 0;
+}
+
+h1
+{
+	font-size: 27pt;
+	font-family: sans-serif;
+	color: #333;
+}
+
+h2
+{
+	font-size: 20pt;
+	font-family: sans-serif;
+	color: #333;
+}
+
+hr
+{
+	border: none;
+	border-bottom: 1px solid #CCC9C5;
+}
+
+a
+{
+	color: #666;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #444;
+	text-decoration: underline;
+}

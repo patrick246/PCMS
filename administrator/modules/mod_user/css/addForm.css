@@ -1,0 +1,25 @@
+.mod_user_addform
+{
+	width: 500px;
+}
+
+.mod_user_row
+{
+	width: 400px;
+	clear: both;
+}
+
+input:not([type='submit']), select
+{
+	float: right;
+	display: block;
+	padding: 5px;
+	border: 1px solid grey;
+	width: 150px !important;
+	box-sizing: content-box;
+}
+
+input[type='submit']
+{
+	float: right;
+}

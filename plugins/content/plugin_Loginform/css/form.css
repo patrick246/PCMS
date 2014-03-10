@@ -1,0 +1,22 @@
+.plugin_loginform
+{
+	width: 150px;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+.plugin_loginform input[type=text], .plugin_loginform input[type=password]
+{
+	border: 1px solid grey;
+	box-shadow: none;
+	height: 20px;
+	margin-bottom: 10px;
+	background-color: white !important;
+	padding: 5px;
+	width: 155px;
+}
+
+.plugin_loginform input:-webkit-autofill
+{
+	background-color: #fff !important; 
+}

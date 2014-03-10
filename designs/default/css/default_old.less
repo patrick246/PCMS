@@ -1,0 +1,122 @@
+@container-border-color: #555;
+@background-color: #80C0FF;
+@vertical-line-color: #AAA;
+
+@font-face {
+  font-family: 'Coda Caption';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Coda Caption Heavy'), local('CodaCaption-Heavy'), url(http://themes.googleusercontent.com/static/fonts/codacaption/v5/YDl6urZh-DUFhiMBTgAnz2pVmE9oLybi4D_AN-2K110.woff) format('woff');
+}
+
+h1
+{
+	font-family: 'Coda Caption', sans-serif;
+}
+
+h2
+{
+	font-family: 'Coda Caption', sans-serif;
+	margin: 0;
+	margin-right: 30px;
+	margin-left: 5px;
+	padding-left: 8px;
+	font-size: 14pt;
+	border-bottom: 1px solid @vertical-line-color;
+}
+
+body {
+  margin:0;
+  padding:0;
+  background-color: @background-color;
+  background-image: url('../img/bg.png');
+  font-family: sans-serif;
+}
+.container {
+	margin:0 auto;
+	width:1024px;
+	padding:10px;
+	border: 5px solid @container-border-color;
+	background-color:#ffffff;
+}
+header {
+  text-align:center;
+  margin: 0 15px;
+  padding: 15px;
+  border-bottom:1px solid @vertical-line-color;
+  h1 {
+    margin:5px;
+  }
+}
+nav 
+{
+  float:left;
+  width:20%;
+  margin:10px;
+  margin-top:0px;
+  .box_aboveMenu
+  {
+  	padding: 2px;
+  	margin: 0;
+  	margin-bottom: 15px;
+  }
+  ul 
+  {
+    list-style-type:none;
+    padding:2px;
+    margin:0px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    li 
+    {
+    	a
+    	{
+    		color: black;
+			text-decoration: none;
+			transition: background .5s, padding-left .5s;
+			padding: 3px;
+			display: block;
+			margin-right: 30px;
+			padding-left: 8px;
+    	}
+    	a:hover
+    	{
+			background: lighten(@background-color, 20%);
+			padding-left: 15px;
+    	}
+    }
+  }
+  .box_underMenu
+  {
+  	font-size: 10pt;
+  	padding: 2px;
+  	margin: 0;
+  }
+}
+article.main {
+	.box_aboveContent
+	{
+		font-size: 10pt;
+		border-bottom: 1px solid lighten(@vertical-line-color, 20%);
+		margin-bottom: 25px;
+	}
+	
+	margin:10px;
+	margin-left:21%;
+	padding:5px;
+	min-height: 250px;
+	border-left:1px solid lighten(@vertical-line-color, 10%);
+  
+	.box_underContent
+	{
+		font-size: 10pt;
+		border-top: 1px solid lighten(@vertical-line-color, 20%);
+		margin-top: 25px;
+	}
+}
+footer 
+{
+  clear:both;
+  border-top:1px solid @vertical-line-color;
+  text-align:center;
+}
