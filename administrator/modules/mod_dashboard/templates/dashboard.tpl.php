@@ -38,7 +38,7 @@
 			foreach($tpl_visitors as $visitor)
 			{
 		?>
-				<tr<?=($visitor->ip == "127.0.0.1" || $visitor->ip == "::1")?' class="success"':''?>>
+				<tr<?=($visitor->ip == $_SERVER['REMOTE_ADDR']|| $visitor->ip == "::1")?' class="success"':''?>>
 					<td><?=$visitor->id?></td><td><?=$visitor->ip?></td><td><?=date('d.M.Y H:i:s', $visitor->time_visited)?></td><td><?=$visitor->querystring?></td><td><?=$visitor->referrer?></td><td><?=$visitor->user_agent?></td>
 					
 				</tr>
