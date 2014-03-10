@@ -16,6 +16,9 @@ class AdminCMS
 		$this->menu = new Menu($this, 'admin');
 
 		$this->user = (isset($_SESSION['uid']) && $this->database->getTable('User')->idExists($_SESSION['uid'])) ? new User($_SESSION['uid'], $this) : null;
+		
+		// Set default timezone
+		date_default_timezone_set('Europe/Berlin');
 	}
 	
 	public function run()
