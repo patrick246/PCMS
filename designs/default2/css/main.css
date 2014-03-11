@@ -7,10 +7,10 @@ html, body
 
 header
 {
-	height: 250px;
 	background-color: #3cf;
 	color: #FFF;
 	/*background-image: url('../img/bg_header.jpg');*/
+	overflow: auto;
 }
 
 .overlay_header
@@ -21,6 +21,7 @@ header
 	background-image: -o-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(50,50,50,0.5) 25%, rgba(50,50,50,0.9) 100%);
 	background-image: linear-gradient(left, rgba(0,0,0,0) 0%, rgba(50,50,50,0.5) 25%, rgba(50,50,50,0.9) 100%);
 	height: inherit;
+	overflow: auto;
 }
 
 .container
