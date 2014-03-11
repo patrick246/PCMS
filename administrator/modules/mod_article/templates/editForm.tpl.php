@@ -1,5 +1,5 @@
 <h2>Artikel bearbeiten</h2>
-<form class='form-horizontal' action='/<?=$tpl_root?>/admin/article/editProcess' method="post">
+<form class='form-horizontal' action='<?=$tpl_root?>admin/article/editProcess' method="post">
 	<div class='form-group'>
 		<label for='name' class='col-sm-2 control-label'>Artikelname</label>
 		<div class='col-sm-10'>

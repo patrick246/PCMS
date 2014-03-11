@@ -28,7 +28,8 @@ class Template
 			return $elem;
 		};
 		
-		$this->set('root', Config::SUBDIR);
+		$this->set('root', '/' . Config::SUBDIR . '/');
+		
 	}
 	
 	public function set($key, $value, callable $escape = null)

@@ -1,5 +1,5 @@
 <h1>Alle Artikel</h1>
-<a class='btn btn-default' href='/<?=$tpl_root?>/admin/article/add'>
+<a class='btn btn-default' href='<?=$tpl_root?>admin/article/add'>
 	<span class='glyphicon glyphicon-plus'></span>
 	Neuer Artikel
 </a>

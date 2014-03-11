@@ -15,7 +15,6 @@ class plugin_Loginform extends Plugin
 			
 			$page->addCssFile('/' . Config::SUBDIR . '/plugins/content/plugin_Loginform/css/form.css');
 		}
-		$template->set('root', Config::SUBDIR);
 		return $template->display();
 	}
 	

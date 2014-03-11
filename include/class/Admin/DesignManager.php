@@ -77,7 +77,6 @@ class Admin_DesignManager
 				$this->tpl->set($pluginBox, '<p>This is a content plugin box!</p>', $this->tpl->getNoEscapeFunc());
 			}
 		}
-		$this->tpl->set('root', Config::SUBDIR);
 		$this->tpl->set('pagetitle', 'PCMS');
 		$this->tpl->set('title', $page->title);
 		echo $this->tpl->display();

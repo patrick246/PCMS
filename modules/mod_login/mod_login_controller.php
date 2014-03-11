@@ -5,7 +5,6 @@ class mod_login_controller extends Controller
 	{
 		$page = new Page();
 		$template = new Template($this->app->workDir . 'modules/mod_login/templates/form.tpl.php');
-		$template->set('root', Config::SUBDIR);
 		$page->mainContent = $template->display();
 		$page->addCssFile('/' . Config::SUBDIR . '/modules/mod_login/css/form.css');
 		$page->title = 'Login';

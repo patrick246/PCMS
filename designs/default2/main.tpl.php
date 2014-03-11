@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title><?=$tpl_title?></title>
-	<link rel='stylesheet' href='/<?=$tpl_root?>/designs/default2/css/main.css'>
+	<link rel='stylesheet' href='<?=$tpl_root?>designs/default2/css/main.css'>
 	<!-- Module and Plugin Stylesheets -->
 	<?php foreach($tpl_css as $css) echo $css;?>
 	<!-- End Module and Plugin Stylesheets -->

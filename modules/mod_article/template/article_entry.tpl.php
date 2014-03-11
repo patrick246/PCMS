@@ -9,7 +9,7 @@
 	</div>
 	<p>
 	<?php if($tpl_link_to_article){?>
-		<a href='/<?=$tpl_root?>/article/show/<?=$tpl_id?>'>Zum Artikel</a>
+		<a href='<?=$tpl_root?>article/show/<?=$tpl_id?>'>Zum Artikel</a>
 	<?php }?>
 	</p>
 </article>

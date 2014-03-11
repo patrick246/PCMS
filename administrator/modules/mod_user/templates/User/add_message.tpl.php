@@ -5,8 +5,8 @@ if($tpl_status == 'success')
 <div class='alert alert-success'>
 	<?=$tpl_message?>
 </div>
-<a href='/<?=$tpl_root?>/admin/user'>Zurück zur Userverwaltung</a><br>
-<a href='/<?=$tpl_root?>/admin/user/detail/<?=$tpl_id?>'>User anzeigen</a>
+<a href='<?=$tpl_root?>admin/user'>Zurück zur Userverwaltung</a><br>
+<a href='<?=$tpl_root?>admin/user/detail/<?=$tpl_id?>'>User anzeigen</a>
 <?php 
 }
 else
@@ -25,7 +25,7 @@ else
 		?>
 	</ul>
 </div>
-<a href='/<?=$tpl_root?>/admin/user'>Zurück zur Userverwaltung</a>
+<a href='<?=$tpl_root?>admin/user'>Zurück zur Userverwaltung</a>
 <?php
 }
 ?>

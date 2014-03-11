@@ -81,7 +81,6 @@ class DesignManager
 			
 		}
 		
-		$this->tpl->set('root', Config::SUBDIR);
 		$this->tpl->set('meta', $page->getMeta(), $this->tpl->getNoEscapeFunc());
 		$this->tpl->set('pagetitle', $page->title);
 		echo $this->tpl->display();

@@ -2,8 +2,8 @@
 <html>
 <head>
 	<title></title>
-	<link rel='stylesheet/less' type='text/css' href='/<?=$tpl_root?>/administrator/designs/default/default.less'>
-	<script src='/<?=$tpl_root?>/administrator/designs/default/less-1.3.3.min.js'></script>
+	<link rel='stylesheet/less' type='text/css' href='<?=$tpl_root?>administrator/designs/default/default.less'>
+	<script src='<?=$tpl_root?>administrator/designs/default/less-1.3.3.min.js'></script>
 </head>
 <body>
 	<div class='container'>

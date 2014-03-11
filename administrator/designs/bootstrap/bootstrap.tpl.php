@@ -2,10 +2,10 @@
 <html>
 <head>
 	<title><?=$tpl_title?></title>
-	<link rel='stylesheet' href='/<?=$tpl_root?>/administrator/designs/bootstrap/css/bootstrap.min.css'>
-	<link rel='stylesheet' href='/<?=$tpl_root?>/administrator/designs/bootstrap/css/bootstrap-theme.min.css'>
-	<script src='/<?=$tpl_root?>/administrator/designs/bootstrap/js/jquery-2.0.3.min.js'></script>
-	<script src='/<?=$tpl_root?>/administrator/designs/bootstrap/js/bootstrap.min.js'></script>
+	<link rel='stylesheet' href='<?=$tpl_root?>administrator/designs/bootstrap/css/bootstrap.min.css'>
+	<link rel='stylesheet' href='<?=$tpl_root?>administrator/designs/bootstrap/css/bootstrap-theme.min.css'>
+	<script src='<?=$tpl_root?>administrator/designs/bootstrap/js/jquery-2.0.3.min.js'></script>
+	<script src='<?=$tpl_root?>administrator/designs/bootstrap/js/bootstrap.min.js'></script>
 	<?=$tpl_js?>
 	<meta charset='utf-8'>
 	<style>
@@ -33,7 +33,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="/<?=$tpl_root?>/admin"><?=$tpl_pagetitle?></a>
+				<a class="navbar-brand" href="<?=$tpl_root?>admin"><?=$tpl_pagetitle?></a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class='nav navbar-nav navbar-left'>

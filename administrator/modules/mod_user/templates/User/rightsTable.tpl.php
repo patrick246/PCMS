@@ -1,11 +1,11 @@
 <h1>Rechte von <?=$tpl_username?></h1>
-<form action='/<?=$tpl_root?>/admin/user/setRights' method='POST'>
+<form action='<?=$tpl_root?>admin/user/setRights' method='POST'>
 	<div>
-		<a href='/<?=$tpl_root?>/admin/user/showAll ' class='btn btn-default btn-sm'>
+		<a href='<?=$tpl_root?>admin/user/showAll ' class='btn btn-default btn-sm'>
 			<span class='glyphicon glyphicon-th-list'></span>
 			Zurück zur Liste
 		</a>
-		<a href='/<?=$tpl_root?>/admin/user/detail/<?=$tpl_id?>' class='btn btn-default btn-sm'>
+		<a href='<?=$tpl_root?>admin/user/detail/<?=$tpl_id?>' class='btn btn-default btn-sm'>
 			<span class='glyphicon glyphicon-arrow-left'></span>
 			Zurück zur Übersicht
 		</a>

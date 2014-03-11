@@ -1,5 +1,5 @@
 <h2>Artikel hinzufügen</h2>
-<form class='form-horizontal' action='/<?=$tpl_root?>/admin/article/addProcess' method="post">
+<form class='form-horizontal' action='<?=$tpl_root?>admin/article/addProcess' method="post">
 	<div class='form-group'>
 		<label for='name' class='col-sm-2 control-label'>Artikelname</label>
 		<div class='col-sm-10'>

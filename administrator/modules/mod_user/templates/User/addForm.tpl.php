@@ -1,5 +1,5 @@
 <h1>User hinzufügen</h1>
-<form action='/<?=$tpl_root?>/admin/user/add' method="POST" class='form-horizontal' role='form'>
+<form action='<?=$tpl_root?>admin/user/add' method="POST" class='form-horizontal' role='form'>
 	<div class='form-group'>
 		<label for='username' class='col-sm-2 control-label'>Username</label>
 		<div class='col-sm-10'>

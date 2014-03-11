@@ -12,7 +12,7 @@
 		}
 ?>
 	
-	<link rel='stylesheet/less' type='text/css' href='/<?=$tpl_root?>/designs/default/css/default.less'>
+	<link rel='stylesheet/less' type='text/css' href='<?=$tpl_root?>designs/default/css/default.less'>
 <?php
 		foreach ($tpl_css as $css) {
 			echo $css;
@@ -20,7 +20,7 @@
 ?>
 	
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
-	<script src='/<?=$tpl_root?>/designs/default/js/less-1.3.3.min.js'></script>
+	<script src='<?=$tpl_root?>designs/default/js/less-1.3.3.min.js'></script>
 	
 </head>
 <body>

@@ -1,5 +1,5 @@
 <h2>Alle User</h2>
-<a href='/<?=$tpl_root?>/admin/user/addForm' class='btn btn-default btn-sm' style='margin-bottom: 15px;'>
+<a href='<?=$tpl_root?>admin/user/addForm' class='btn btn-default btn-sm' style='margin-bottom: 15px;'>
 	<span class='glyphicon glyphicon-plus'></span>
 	User hinzufügen
 </a>
