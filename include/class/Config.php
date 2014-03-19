@@ -36,8 +36,6 @@ class Config
 	
 	const MODULE_DIR					= "modules/";
 	
-	const SUBDIR 	= "cms";
-	
 	const DEFAULT_CONTROLLER_ADMIN 			= "dashboard";
 	const DEFAULT_CONTROLLER_ADMIN_METHOD 	= "show";
 	public static $DEFAULT_CONTROLLER_ADMIN_PARAMS = array();

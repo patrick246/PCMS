@@ -13,7 +13,7 @@ class plugin_Loginform extends Plugin
 		{
 			$template = new Template($this->app->workDir . 'plugins/content/plugin_Loginform/templates/loginform.tpl.php');
 			
-			$page->addCssFile('/' . Config::SUBDIR . '/plugins/content/plugin_Loginform/css/form.css');
+			$page->addCssFile('/' . SUBDIR . '/plugins/content/plugin_Loginform/css/form.css');
 		}
 		return $template->display();
 	}

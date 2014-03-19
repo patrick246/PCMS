@@ -12,18 +12,31 @@ class Database_Connection
 	 * @param string $password
 	 * @param string $database
 	 */
-	public function __construct(&$app, $host, $username, $password, $database) 
+	public function __construct(&$app, $host, $username, $password, $database, $dbprefix = Config::DBPREFIX, $catchException = true) 
 	{
 		$this->app = &$app;
-		try
+		$this->prefix = $dbprefix;
+		if($catchException)
 		{
-			$this->conn = new PDO("mysql:host=" . $host . ";dbname=".$database.';charset=UTF8', $username, $password);
-			$this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
-		} 
-		catch (PDOException $e)
-		{
-			trigger_error("Cannot connect to database. " . $e->getMessage(), E_USER_ERROR);
+			try
+			{
+				$this->connect_($host, $username, $password, $database);
+			} 
+			catch (PDOException $e)
+			{
+				trigger_error("Cannot connect to database. " . $e->getMessage(), E_USER_ERROR);
+			}
 		}
+		else
+		{
+			$this->connect_($host, $username, $password, $database);
+		}
+	}
+	
+	private function connect_($host, $username, $password, $dbname)
+	{
+		$this->conn = new PDO("mysql:host=" . $host . ";dbname=".$dbname.';charset=UTF8', $username, $password);
+		$this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 	}
 	
 	/**
@@ -84,7 +97,7 @@ class Database_Connection
 	 */
 	public function processTableName($name)
 	{
-		return Config::DBPREFIX . $name;
+		return $this->prefix . $name;
 	}
 	
 	/**
@@ -114,4 +127,10 @@ class Database_Connection
 	 * @var Array of Database_Table
 	 */
 	private $tables = array();
+	
+	/**
+	 * The Table prefix
+	 * @var string
+	 */
+	 private $prefix = "";
 }

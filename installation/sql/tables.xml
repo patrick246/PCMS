@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.1.9
+- http://www.phpmyadmin.net
+-
+- Host: localhost
+- Generation Time: Mar 12, 2014 at 03:48 PM
+- Server version: 5.5.35-0ubuntu0.13.10.2
+- PHP Version: 5.5.3-1ubuntu2.2
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <structure_schemas>
+        <database name="cms" collation="latin1_swedish_ci" charset="latin1">
+            <table name="##prefix##AdminMenu">
+                CREATE TABLE `##prefix##AdminMenu` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `link` varchar(250) NOT NULL,
+                  `text` varchar(250) NOT NULL,
+                  `role_id` varchar(50) NOT NULL,
+                  `parent` int(11) NOT NULL,
+                  `type` varchar(25) NOT NULL,
+                  `priority` int(11) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </table>
+            <table name="##prefix##Article">
+                CREATE TABLE `##prefix##Article` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `title` varchar(250) NOT NULL,
+                  `url_title` varchar(50) NOT NULL,
+                  `content` text NOT NULL,
+                  `author_id` int(11) NOT NULL,
+                  `time_created` int(11) NOT NULL,
+                  `role` varchar(35) NOT NULL,
+                  `hits` int(11) NOT NULL,
+                  `time_last_changed` int(11) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </table>
+            <table name="##prefix##Config">
+                CREATE TABLE `##prefix##Config` (
+                  `id` varchar(50) NOT NULL,
+                  `value` varchar(250) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </table>
+            <table name="##prefix##Menu">
+                CREATE TABLE `##prefix##Menu` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `text` varchar(250) NOT NULL,
+                  `link` varchar(250) NOT NULL,
+                  `role_id` varchar(50) NOT NULL,
+                  `parent` int(11) NOT NULL,
+                  `type` varchar(25) NOT NULL,
+                  `priority` int(11) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </table>
+            <table name="##prefix##Plugin">
+                CREATE TABLE `##prefix##Plugin` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `name` varchar(250) NOT NULL,
+                  `box` varchar(250) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </table>
+            <table name="##prefix##Right">
+                CREATE TABLE `##prefix##Right` (
+                  `id` varchar(35) NOT NULL,
+                  `name` varchar(50) NOT NULL,
+                  `priority` int(11) NOT NULL,
+                  `module` varchar(50) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </table>
+            <table name="##prefix##RightToRole">
+                CREATE TABLE `##prefix##RightToRole` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `role_id` varchar(50) NOT NULL,
+                  `right_id` varchar(35) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+            </table>
+            <table name="##prefix##Role">
+                CREATE TABLE `##prefix##Role` (
+                  `id` varchar(50) NOT NULL,
+                  `name` varchar(50) NOT NULL,
+                  PRIMARY KEY (`id`),
+                  UNIQUE KEY `key` (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </table>
+            <table name="##prefix##User">
+                CREATE TABLE `##prefix##User` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `name` varchar(50) NOT NULL,
+                  `password` varchar(128) NOT NULL,
+                  `role_id` varchar(35) NOT NULL,
+                  `email` varchar(250) NOT NULL,
+                  `banned` tinyint(1) NOT NULL,
+                  `activated` tinyint(1) NOT NULL,
+                  `last_action` int(11) NOT NULL,
+                  `date_registered` int(11) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </table>
+            <table name="##prefix##Visitor">
+                CREATE TABLE `##prefix##Visitor` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `time_visited` int(11) NOT NULL,
+                  `ip` varchar(40) NOT NULL,
+                  `referrer` varchar(250) NOT NULL,
+                  `user_agent` varchar(250) NOT NULL,
+                  `querystring` varchar(500) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </table>
+        </database>
+    </structure_schemas>
+</pma_xml_export>

@@ -12,6 +12,7 @@ class mod_article_controller extends Controller
 			return ($elem1->time_created > $elem2->time_created) ? -1 : 1;
 		});
 		$page->mainContent = "";
+		
 		foreach($entries as $key => $entry)
 		{
 			$user = $this->app->database->getTable("User")->{$entry->author_id};
@@ -34,8 +35,8 @@ class mod_article_controller extends Controller
 			
 		}
 		$page->title = "Alle Artikel";
-		$page->addMeta("author", $user->name, "name");
-		$page->addCssFile('/' . Config::SUBDIR . DIRECTORY_SEPARATOR . Config::MODULE_DIR . "mod_article/template/article_entry.css");
+		$page->addMeta("author", '', "name");
+		$page->addCssFile('/' . SUBDIR . DIRECTORY_SEPARATOR . Config::MODULE_DIR . "mod_article/template/article_entry.css");
 		return $page;
 	}
 	

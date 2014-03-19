@@ -18,6 +18,9 @@ class CMS
 	 */
 	public function __construct($workDir)
 	{
+		// Set default timezone
+		date_default_timezone_set('Europe/Berlin');
+		
 		// Set the main include dir
 		$this->workDir = $workDir.'/';
 		

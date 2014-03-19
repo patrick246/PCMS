@@ -76,7 +76,7 @@ class mod_article_controller extends Controller
 			$template->set('roles', $roles, $template->getNoEscapeFunc());
 			
 			$page->mainContent = $template->display();
-			$page->addJSFile('/' . Config::SUBDIR . '/administrator/modules/mod_article/js/tinymce/tinymce.min.js');
+			$page->addJSFile('/' . SUBDIR . '/administrator/modules/mod_article/js/tinymce/tinymce.min.js');
 			$page->addJSString('tinymce.init(
 					{
 						selector: "textarea",
@@ -140,7 +140,7 @@ class mod_article_controller extends Controller
 		$roles = $this->database->Role->getAllEntries();
 		$template->set('roles', $roles, $template->getNoEscapeFunc());
 		
-		$page->addJSFile('/' . Config::SUBDIR . '/administrator/modules/mod_article/js/tinymce/tinymce.min.js');
+		$page->addJSFile('/' . SUBDIR . '/administrator/modules/mod_article/js/tinymce/tinymce.min.js');
 		
 		$page->addJSString('tinymce.init(
 					{

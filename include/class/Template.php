@@ -28,7 +28,7 @@ class Template
 			return $elem;
 		};
 		
-		$this->set('root', '/' . Config::SUBDIR . '/');
+		$this->set('root', '/' . SUBDIR . '/');
 		
 	}
 	
