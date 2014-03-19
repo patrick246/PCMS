@@ -13,7 +13,7 @@ The CMS needs to know some things about the Design. For example which file shoul
 
 ```php
 <?php
-class YOUR_PLUGIN_NAME_info implements DesignInfo
+class YOUR_DESIGN_NAME_info implements DesignInfo
 {
 	public function getTemplateFile()
 	{
