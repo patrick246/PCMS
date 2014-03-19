@@ -139,3 +139,7 @@ You now want to use img.png in your css file. Do it like this. You have now avoi
 	background-image: url('../image/img.png');
 }
 ```
+
+## Activate your design
+Currently there is no way to change the design from the backend.
+The value you need to change is in the database, the table prefix_Config with the ID "activeDesign". Just change the value to your folder's name. 
