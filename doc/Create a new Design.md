@@ -46,27 +46,33 @@ You don't need to use any of these, but then the CMS kind of looses it's point. 
 Following placeholders are defined:
 
 * root
+
 The subdir the cms is installed in. Useful for referencing css, script or image files.
 
 * title
+
 A generated title for use in the title-Tag. Also useful for a breadcrumb.
 
 * css
+
 A list of CSS files to be included by the modules. This PHP snipped is normally enough to include the files:
 ```php
 <?php foreach($tpl_css as $css) echo $css;?>
 ```
 
 * meta
+
 Module generated meta tags. Same as the CSS files, just put the out with:
 ```php
 <?php foreach ($tpl_meta as $meta) echo $meta;?>
 ```
 
 * header
+
 The page title that usually goes into the header
 
 * menu
+
 All menu links. They are not preformatted to allow customization. You need a bit PHP:
 ```php
 <ul>
@@ -83,9 +89,11 @@ All menu links. They are not preformatted to allow customization. You need a bit
 This PHP-Code generates a unordered List. The foreach loops through all Menu entries. You can access the current entry with $entry. $entry->link is the current link destination, $entry->text the link text.
 
 * content
+
 The main content of the page
 
 * (box name)
+
 The content assigned to the box
 
 **Remeber: All names must be prepended by $tpl_**
