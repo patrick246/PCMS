@@ -39,7 +39,7 @@ class Menu
 		}
 		else
 		{
-			$menuentry->link = DIRECTORY_SEPARATOR . SUBDIR . DIRECTORY_SEPARATOR . $menuentry->link;
+			$menuentry->link = '/' . SUBDIR . '/' . $menuentry->link;
 			return new MenuEntry($menuentry);
 		}
 	}

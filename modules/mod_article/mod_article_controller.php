@@ -36,7 +36,7 @@ class mod_article_controller extends Controller
 		}
 		$page->title = "Alle Artikel";
 		$page->addMeta("author", '', "name");
-		$page->addCssFile('/' . SUBDIR . DIRECTORY_SEPARATOR . Config::MODULE_DIR . "mod_article/template/article_entry.css");
+		$page->addCssFile('/' . SUBDIR . '/' . Config::MODULE_DIR . "mod_article/template/article_entry.css");
 		return $page;
 	}
 	

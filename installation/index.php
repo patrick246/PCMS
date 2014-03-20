@@ -8,7 +8,7 @@ define('SUBDIR', substr(str_replace('/installation', '', dirname($_SERVER['PHP_S
 function __autoload($classname)
 {
 	$includeRoot = dirname(__FILE__) . '/../include/class/';
-	$filepath = str_replace('_', DIRECTORY_SEPARATOR, $classname).'.php';
+	$filepath = str_replace('_', '/', $classname).'.php';
 	if(!file_exists($includeRoot.$filepath))
 		return false;
 	require_once $includeRoot.$filepath;

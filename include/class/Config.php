@@ -16,7 +16,7 @@ class Config
 	 * Password to log into the database
 	 * @var string
 	 */
-	const DBPASSWORD	= "pw123";
+	const DBPASSWORD	= "";
 	/**
 	 * The name of the database
 	 * @var string
@@ -26,17 +26,15 @@ class Config
 	 * The prefix all table names get
 	 * @var string
 	 */
-	const DBPREFIX		= "cmsv3_";
-	
-	const TMPDIR		= "tmp";
+	const DBPREFIX		= "pcms_";
 
-	const DEFAULT_CONTROLLER 			= "article";
-	const DEFAULT_CONTROLLER_METHOD 	= "all"; 
+	const DEFAULT_CONTROLLER 						= "article";
+	const DEFAULT_CONTROLLER_METHOD 				= "all"; 
 	public static $DEFAULT_CONTROLLER_PARAMS		= array(1);
 	
-	const MODULE_DIR					= "modules/";
+	const MODULE_DIR	= "modules/";
 	
-	const DEFAULT_CONTROLLER_ADMIN 			= "dashboard";
-	const DEFAULT_CONTROLLER_ADMIN_METHOD 	= "show";
-	public static $DEFAULT_CONTROLLER_ADMIN_PARAMS = array();
+	const DEFAULT_CONTROLLER_ADMIN 					= "dashboard";
+	const DEFAULT_CONTROLLER_ADMIN_METHOD 			= "show";
+	public static $DEFAULT_CONTROLLER_ADMIN_PARAMS 	= array();
 }

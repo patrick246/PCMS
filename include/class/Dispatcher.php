@@ -70,7 +70,7 @@ class Dispatcher
 		$classname_file = 'mod_' . $classname . '_controller';
 		
 		// The main controller class file must be in [Module Directory]/[Module name]/[Class Name].php
-		$path = $moduleDir . 'mod_' . $classname . DIRECTORY_SEPARATOR;
+		$path = $moduleDir . 'mod_' . $classname . '/';
 		$filename = $classname_file . '.php';
 		
 		// If there is such a file

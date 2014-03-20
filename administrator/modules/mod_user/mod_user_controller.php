@@ -93,7 +93,7 @@ class mod_user_controller extends Controller
 		$username = htmlentities($_POST['username']);
 		$pw = $_POST['pw'];
 		$pw_repeat = $_POST['pw_repeat'];
-		$role = intval($_POST['role']);
+		$role = $_POST['role'];
 		$email = $_POST['email'];
 		
 		// EMPTY checks
