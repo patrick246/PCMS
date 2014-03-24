@@ -179,6 +179,8 @@ class mod_article_controller extends Controller
 					'hits' => 0,
 					'time_last_changed' => 0
 				));
+		$page->title = "Erfolgreich bearbeitet";
+		$page->mainContent = "<p class='alert alert-success'>Der Artikel wurde erfolgreich hinzugefügt.</p>";
 		return $page;
 	}
 }

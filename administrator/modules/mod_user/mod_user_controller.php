@@ -88,7 +88,7 @@ class mod_user_controller extends Controller
 		$error = false;
 		
 		$page = new Page();
-		$template = new Template($this->moduleBaseDir . 'templates/add_message.tpl.php');
+		$template = new Template($this->moduleBaseDir . 'templates/User/add_message.tpl.php');
 		
 		$username = htmlentities($_POST['username']);
 		$pw = $_POST['pw'];
@@ -273,60 +273,5 @@ class mod_user_controller extends Controller
 		$page->mainContent = $tpl->display();
 		$page->title = 'User bearbeitet';
 		return $page;
-	}
-	
-	public function roleRights($id)
-	{
-		$page = new Page();
-		$roleTable = $this->database->getTable('Role');
-		if(!$roleTable->idExists($id))
-		{
-			$page->errorCode = 404;
-			$page->errorMessage = "Die angegebene Rolle existiert nicht.";
-			return $page;
-		}
-		
-		return $page;
-		
-		/*$userTable = $this->database->User;
-		
-		if(!$userTable->idExists($id))
-		{
-			$page->errorCode = 404;
-			$page->errorMessage = "Der User konnte nicht gefunden werden";
-			return $page; 
-		}
-		
-		$rightsTable = $this->database->Right;
-		$rights = $rightsTable->getAllEntries('priority', 'DESC');
-		
-		$template = new Template($this->moduleBaseDir . 'templates/rightsTable.tpl.php');
-		$user = new User($id, $this->app);
-		
-		$rightArray = array();
-		foreach($rights as $right)
-		{
-			if($user->hasRight($right->id) == 'true')
-			{
-				$rightArray[$right->id] = array('name' => $right->name, 'granted' => true, 'disabled' => false);
-			}
-			else if($user->hasRight($right->id) == 'all')
-			{
-				$rightArray[$right->id] = array('name' => $right->name, 'granted' => true, 'disabled' => true);
-			}
-			else
-			{
-				$rightArray[$right->id] = array('name' => $right->name, 'granted' => false, 'disabled' => false);
-			}
-			
-		}
-		
-		$template->set('rights', $rightArray, $template->getNoEscapeFunc());
-		$template->set('username', $user->dbEntry()->name);
-		$template->set('id', $user->dbEntry()->id);
-		
-		$page->mainContent = $template->display();
-		*/
-		
 	}
 }

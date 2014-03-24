@@ -3,6 +3,9 @@ class AdminCMS
 {
 	public function __construct($workingDir)
 	{
+		// Set default timezone
+		date_default_timezone_set('Europe/Berlin');
+		
 		require_once $this->workDir.'include/functions/functions.php';
 		loadAllFunctions($this);
 		
@@ -17,8 +20,7 @@ class AdminCMS
 
 		$this->user = (isset($_SESSION['uid']) && $this->database->getTable('User')->idExists($_SESSION['uid'])) ? new User($_SESSION['uid'], $this) : null;
 		
-		// Set default timezone
-		date_default_timezone_set('Europe/Berlin');
+		
 	}
 	
 	public function run()
