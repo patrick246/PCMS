@@ -3,7 +3,6 @@
 		<h1><?=$tpl_title?></h1>
 		Author: <?=$tpl_author?>
 	</div>
-	<hr>
 	<div class='article_content'>
 		<?=$tpl_content?>
 	</div>
@@ -13,4 +12,3 @@
 	<?php }?>
 	</p>
 </article>
-<hr>

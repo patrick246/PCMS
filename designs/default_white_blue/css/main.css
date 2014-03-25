@@ -1,0 +1,142 @@
+body, html
+{
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+	height: 100%;
+}
+
+.container
+{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.navbar
+{
+	border-bottom: 20px solid #09f;
+	margin-bottom: 20px;
+	background-color: #E6F5FF;
+	background-color: #66c2ff;
+}
+
+.navbar .navbar-brand
+{
+	float: left;
+	margin-right: 10px;
+	margin-bottom: -5px;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	display: block;
+	padding: 25px 10px;
+	font-weight: bold;
+	font-size: 14pt;
+}
+
+.navbar .navbar-nav
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+	
+}
+
+.navbar .navbar-nav li
+{
+	float: left;
+	overflow: auto;
+}
+
+.navbar .navbar-nav li a
+{
+	color: black;
+	text-decoration: none;
+	display: block;
+	padding: 25px 10px 15px 10px;
+	border-bottom: 10px solid transparent;
+}
+
+.navbar .navbar-nav li a:hover
+{
+	background-color: #CCEBFF;
+	border-bottom: 10px solid #333;
+}
+
+#nonFooter
+{
+	background-color: white;
+	min-height: 100%;
+}
+
+footer
+{
+	background-color: #E6F5FF;
+	margin-bottom: 0;
+	margin-top: -250px;
+	height: 200px;
+	padding: 35px 0 15px 0;
+	/*box-shadow: 20px 15px 15px #555 inset;*/
+	
+	
+	background-color: #0063A6;
+	background-color: #222;
+	color: white;
+}
+
+footer h2
+{
+	color: white;
+}
+
+footer ul
+{
+	list-style-type: none;
+	padding-left: 15px; 
+}
+
+.content
+{
+	padding-bottom: 250px;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1
+{
+	font-size: 36px;
+	font-weight: 500;
+	color: #333;
+}
+
+h2
+{
+	font-weight: 500;
+	font-size: 32px;
+	color: #333;
+}
+
+hr
+{
+	border-color: #333;
+}
+
+a
+{
+	color: #0077B3;
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+input:not([type='submit'])
+{
+	width: 100%;
+}

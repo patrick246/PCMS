@@ -9,16 +9,42 @@ class plugin_GithubEvents extends Plugin
 					'synchronize' => '?',
 					'reopened' => '&ouml;ffnete'
 				);
-		$context = stream_context_create(array('http' => array('user_agent' => 'patrick246\'s custom CMS GitHub Plugin')));
-		$link = sprintf('https://%s:%s@api.github.com/users/patrick246/events', $this->app->database->Config->plugin_github_username->value, $this->app->database->Config->plugin_github_password->value);
-		$github_response = file_get_contents($link, false, $context);
+		
+		
+		
+		$tempdir = sys_get_temp_dir();
+		if($tempdir[strlen($tempdir)-1] != '/')
+		{
+			$tempdir .= '/';
+		}
+		
+		
+		if(!file_exists($tempdir . 'github_plugin.cache'))
+		{
+			$github_response = $this->getGithubResponse();
+			file_put_contents($tempdir . 'github_plugin.cache', time() . '::::' . $github_response);
+		}
+		else
+		{
+			$github_response = explode('::::', file_get_contents($tempdir . 'github_plugin.cache'));
+			if((time() - $github_response[0]) > 10*60 )
+			{
+				$github_response = $this->getGithubResponse();
+			}
+			else 
+			{
+				$github_response = $github_response[1];
+			}
+			
+		}
+		
 		$decoded = json_decode($github_response);
 		$content = '<h2>Github Events</h2><p><b>'. $this->app->database->Config->plugin_github_username->value .'...</b></p>';
 		
 		$i = 0;
 		foreach($decoded as $event)
 		{
-			if($i++ == 10)
+			if($i++ == 3)
 				break;
 			$template = new Template($this->app->workDir . 'plugins/content/plugin_GithubEvents/templates/github_entry.tpl.php');
 			$username = $event->actor->login;
@@ -68,8 +94,10 @@ class plugin_GithubEvents extends Plugin
 			$template->set('gravatar_url', $event->actor->avatar_url . '&s=50', $template->getNoEscapeFunc());
 			$template->set('message', $message, $template->getNoEscapeFunc());
 			$content .= $template->display();
+			
+			
+			
 		}
-		
 		return $content;
 	}
 	
@@ -112,6 +140,13 @@ class plugin_GithubEvents extends Plugin
 			$commits .= sprintf('<a href="http://github.com/%s/commit/%s">%s</a><br>', $event->repo->name, $commit->sha,substr($commit->sha, 0, 7));
 		}
 		return $commits;
+	}
+	
+	private function getGithubResponse()
+	{
+		$context = stream_context_create(array('http' => array('user_agent' => 'PCMS GitHub Plugin')));
+		$link = sprintf('https://%1$s:%2$s@api.github.com/users/%1$s/events', $this->app->database->Config->plugin_github_username->value, $this->app->database->Config->plugin_github_password->value);
+		return file_get_contents($link, false, $context);
 	}
 	
 	public static function shouldDisplay(&$app)

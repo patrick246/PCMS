@@ -19,14 +19,14 @@ class mod_article_controller extends Controller
 			$tpl = new Template($this->app->workDir . Config::MODULE_DIR . 'mod_article/template/article_entry.tpl.php');
 			$tpl->set('id', $entry->id);
 			$tpl->set('author', $user->name);
-			/*if(strlen($entry->content) > 75)
+			if(strlen($entry->content) > 75)
 			{
 				$tpl->set('content', '<i>Artikel zu lang für die Vorschau</i>', $tpl->getNoEscapeFunc());
 			}
 			else
 			{
 				$tpl->set('content', $entry->content, $tpl->getNoEscapeFunc());
-			}*/
+			}
 			$tpl->set('content', '');
 			$tpl->set('title', $entry->title);
 			$tpl->set('link_to_article', true);

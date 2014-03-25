@@ -1,0 +1,808 @@
+Logmode: User Warning 
+	Message: Template file not available!
+	File: /home/patrick/Documents/Aptana Studio 3 Workspace/PCMS/include/class/DesignManager.php
+	Line: 51
+	Context: <pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=7)</i>
+  'app' <font color='#888a85'>=&gt;</font> &amp;
+    <b>object</b>(<i>CMS</i>)[<i>1</i>]
+      <i>public</i> 'database' <font color='#888a85'>=&gt;</font> 
+        <b>object</b>(<i>Database_Connection</i>)[<i>4</i>]
+          <i>private</i> 'conn' <font color='#888a85'>=&gt;</font> 
+            <b>object</b>(<i>PDO</i>)[<i>5</i>]
+              ...
+          <i>private</i> 'app' <font color='#888a85'>=&gt;</font> &amp;
+            <i>&</i><b>object</b>(<i>CMS</i>)[<i>1</i>]
+          <i>private</i> 'tables' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=4)</i>
+              ...
+          <i>private</i> 'prefix' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'cmsv3_'</font> <i>(length=6)</i>
+      <i>public</i> 'request' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+      <i>public</i> 'logger' <font color='#888a85'>=&gt;</font> 
+        <b>object</b>(<i>Logger</i>)[<i>2</i>]
+          <i>public</i> 'bootstrap_log_function' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+          <i>public</i> 'debug' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>true</font>
+          <i>private</i> 'destfile' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'log/log.txt'</font> <i>(length=11)</i>
+          <i>private</i> 'res' <font color='#888a85'>=&gt;</font> <b>resource</b>(<i>2</i><font color='#2e3436'>,</font> <i>stream</i>)
+          <i>private</i> 'app' <font color='#888a85'>=&gt;</font> &amp;
+            <i>&</i><b>object</b>(<i>CMS</i>)[<i>1</i>]
+      <i>public</i> 'workDir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/patrick/Documents/Aptana Studio 3 Workspace/PCMS/'</font> <i>(length=55)</i>
+      <i>public</i> 'menu' <font color='#888a85'>=&gt;</font> 
+        <b>object</b>(<i>Menu</i>)[<i>7</i>]
+          <i>private</i> 'entries' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=5)</i>
+              ...
+          <i>private</i> 'table' <font color='#888a85'>=&gt;</font> 
+            <b>object</b>(<i>Database_Table</i>)[<i>8</i>]
+              ...
+      <i>public</i> 'user' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  'error' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>404</font>
+  'configTable' <font color='#888a85'>=&gt;</font> 
+    <b>object</b>(<i>Database_Table</i>)[<i>22</i>]
+      <i>private</i> 'db' <font color='#888a85'>=&gt;</font> &amp;
+        <b>object</b>(<i>Database_Connection</i>)[<i>4</i>]
+          <i>private</i> 'conn' <font color='#888a85'>=&gt;</font> 
+            <b>object</b>(<i>PDO</i>)[<i>5</i>]
+              ...
+          <i>private</i> 'app' <font color='#888a85'>=&gt;</font> &amp;
+            <b>object</b>(<i>CMS</i>)[<i>1</i>]
+              ...
+          <i>private</i> 'tables' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=4)</i>
+              ...
+          <i>private</i> 'prefix' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'cmsv3_'</font> <i>(length=6)</i>
+      <i>private</i> 'app' <font color='#888a85'>=&gt;</font> &amp;
+        <b>object</b>(<i>CMS</i>)[<i>1</i>]
+          <i>public</i> 'database' <font color='#888a85'>=&gt;</font> 
+            <b>object</b>(<i>Database_Connection</i>)[<i>4</i>]
+              ...
+          <i>public</i> 'request' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+          <i>public</i> 'logger' <font color='#888a85'>=&gt;</font> 
+            <b>object</b>(<i>Logger</i>)[<i>2</i>]
+              ...
+          <i>public</i> 'workDir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/patrick/Documents/Aptana Studio 3 Workspace/PCMS/'</font> <i>(length=55)</i>
+          <i>public</i> 'menu' <font color='#888a85'>=&gt;</font> 
+            <b>object</b>(<i>Menu</i>)[<i>7</i>]
+              ...
+          <i>public</i> 'user' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+      <i>private</i> 'name' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'cmsv3_Config'</font> <i>(length=12)</i>
+      <i>private</i> 'fields' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=1)</i>
+          'activeDesign' <font color='#888a85'>=&gt;</font> 
+            <b>object</b>(<i>Database_TableEntry</i>)[<i>23</i>]
+              ...
+      <i>private</i> 'ids' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  'active' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'default_white_blue'</font> <i>(length=18)</i>
+  'path' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/patrick/Documents/Aptana Studio 3 Workspace/PCMS/designs/default_white_blue/default_white_blue_info.php'</font> <i>(length=109)</i>
+  'classname' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'default_white_blue_info'</font> <i>(length=23)</i>
+  'tpl_file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/patrick/Documents/Aptana Studio 3 Workspace/PCMS/designs/default_white_blue/error.tpl.php'</font> <i>(length=95)</i>
+</pre></pre>
+	Date: 16:03:55, 25. Mar. 2014
+
+Logmode: Warning 
+	Message: Cannot modify header information - headers already sent by (output started at /home/patrick/Documents/Aptana Studio 3 Workspace/PCMS/include/class/Logger.php:81)
+	File: /home/patrick/Documents/Aptana Studio 3 Workspace/PCMS/include/class/DesignManager.php
+	Line: 62
+	Context: <pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=1)</i>
+  'page' <font color='#888a85'>=&gt;</font> &amp;
+    <b>object</b>(<i>Page</i>)[<i>20</i>]
+      <i>private</i> 'js_strings' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'js_files' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'cssFiles' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'metaInfo' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=1)</i>
+          'Content-Type' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+      <i>public</i> 'title' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'404'</font> <i>(length=3)</i>
+      <i>public</i> 'mainContent' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+      <i>public</i> 'errorCode' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>404</font>
+      <i>public</i> 'errorMessage' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+</pre></pre>
+	Date: 16:03:55, 25. Mar. 2014
+
+Logmode: Warning 
+	Message: sprintf(): Too few arguments
+	File: /home/patrick/Documents/Aptana Studio 3 Workspace/PCMS/plugins/content/plugin_GithubEvents/plugin_GithubEvents.php
+	Line: 13
+	Context: <pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=3)</i>
+  'page' <font color='#888a85'>=&gt;</font> &amp;
+    <b>object</b>(<i>Page</i>)[<i>21</i>]
+      <i>private</i> 'js_strings' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'js_files' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'cssFiles' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/modules/mod_article/template/article_entry.css'</font> <i>(length=51)</i>
+          1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/plugins/content/plugin_Loginform/css/form.css'</font> <i>(length=50)</i>
+      <i>private</i> 'metaInfo' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          'author' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+          'Content-Type' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+      <i>public</i> 'title' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Alle Artikel'</font> <i>(length=12)</i>
+      <i>public</i> 'mainContent' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Impressum&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/6&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Weiterf&amp;uuml;hrende Links&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/5&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;'...</font> <i>(length=715)</i>
+      <i>public</i> 'errorCode' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      <i>public</i> 'errorMessage' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'translation_action' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=4)</i>
+      'opened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'erstellte'</font> <i>(length=9)</i>
+      'closed' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'schloss'</font> <i>(length=7)</i>
+      'synchronize' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'?'</font> <i>(length=1)</i>
+      'reopened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&amp;ouml;ffnete'</font> <i>(length=12)</i>
+  'context' <font color='#888a85'>=&gt;</font> <b>resource</b>(<i>5</i><font color='#2e3436'>,</font> <i>stream-context</i>)
+</pre></pre>
+	Date: 18:03:16, 25. Mar. 2014
+
+Logmode: Warning 
+	Message: file_get_contents(): Filename cannot be empty
+	File: /home/patrick/Documents/Aptana Studio 3 Workspace/PCMS/plugins/content/plugin_GithubEvents/plugin_GithubEvents.php
+	Line: 14
+	Context: <pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=4)</i>
+  'page' <font color='#888a85'>=&gt;</font> &amp;
+    <b>object</b>(<i>Page</i>)[<i>21</i>]
+      <i>private</i> 'js_strings' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'js_files' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'cssFiles' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/modules/mod_article/template/article_entry.css'</font> <i>(length=51)</i>
+          1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/plugins/content/plugin_Loginform/css/form.css'</font> <i>(length=50)</i>
+      <i>private</i> 'metaInfo' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          'author' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+          'Content-Type' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+      <i>public</i> 'title' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Alle Artikel'</font> <i>(length=12)</i>
+      <i>public</i> 'mainContent' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Impressum&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/6&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Weiterf&amp;uuml;hrende Links&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/5&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;'...</font> <i>(length=715)</i>
+      <i>public</i> 'errorCode' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      <i>public</i> 'errorMessage' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'translation_action' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=4)</i>
+      'opened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'erstellte'</font> <i>(length=9)</i>
+      'closed' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'schloss'</font> <i>(length=7)</i>
+      'synchronize' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'?'</font> <i>(length=1)</i>
+      'reopened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&amp;ouml;ffnete'</font> <i>(length=12)</i>
+  'context' <font color='#888a85'>=&gt;</font> <b>resource</b>(<i>5</i><font color='#2e3436'>,</font> <i>stream-context</i>)
+  'link' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+</pre></pre>
+	Date: 18:03:16, 25. Mar. 2014
+
+Logmode: Warning 
+	Message: Invalid argument supplied for foreach()
+	File: /home/patrick/Documents/Aptana Studio 3 Workspace/PCMS/plugins/content/plugin_GithubEvents/plugin_GithubEvents.php
+	Line: 19
+	Context: <pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=8)</i>
+  'page' <font color='#888a85'>=&gt;</font> &amp;
+    <b>object</b>(<i>Page</i>)[<i>21</i>]
+      <i>private</i> 'js_strings' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'js_files' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'cssFiles' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/modules/mod_article/template/article_entry.css'</font> <i>(length=51)</i>
+          1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/plugins/content/plugin_Loginform/css/form.css'</font> <i>(length=50)</i>
+      <i>private</i> 'metaInfo' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          'author' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+          'Content-Type' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+      <i>public</i> 'title' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Alle Artikel'</font> <i>(length=12)</i>
+      <i>public</i> 'mainContent' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Impressum&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/6&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Weiterf&amp;uuml;hrende Links&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/5&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;'...</font> <i>(length=715)</i>
+      <i>public</i> 'errorCode' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      <i>public</i> 'errorMessage' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'translation_action' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=4)</i>
+      'opened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'erstellte'</font> <i>(length=9)</i>
+      'closed' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'schloss'</font> <i>(length=7)</i>
+      'synchronize' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'?'</font> <i>(length=1)</i>
+      'reopened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&amp;ouml;ffnete'</font> <i>(length=12)</i>
+  'context' <font color='#888a85'>=&gt;</font> <b>resource</b>(<i>5</i><font color='#2e3436'>,</font> <i>stream-context</i>)
+  'link' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  'github_response' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  'decoded' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  'content' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;h2&gt;Github Events&lt;/h2&gt;&lt;p&gt;&lt;b&gt;patrick246...&lt;/b&gt;&lt;/p&gt;'</font> <i>(length=49)</i>
+  'i' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+</pre></pre>
+	Date: 18:03:16, 25. Mar. 2014
+
+Logmode: Warning 
+	Message: sprintf(): Too few arguments
+	File: /home/patrick/Documents/Aptana Studio 3 Workspace/PCMS/plugins/content/plugin_GithubEvents/plugin_GithubEvents.php
+	Line: 13
+	Context: <pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=3)</i>
+  'page' <font color='#888a85'>=&gt;</font> &amp;
+    <b>object</b>(<i>Page</i>)[<i>21</i>]
+      <i>private</i> 'js_strings' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'js_files' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'cssFiles' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/modules/mod_article/template/article_entry.css'</font> <i>(length=51)</i>
+          1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/plugins/content/plugin_Loginform/css/form.css'</font> <i>(length=50)</i>
+      <i>private</i> 'metaInfo' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          'author' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+          'Content-Type' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+      <i>public</i> 'title' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Alle Artikel'</font> <i>(length=12)</i>
+      <i>public</i> 'mainContent' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Impressum&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/6&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Weiterf&amp;uuml;hrende Links&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/5&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;'...</font> <i>(length=715)</i>
+      <i>public</i> 'errorCode' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      <i>public</i> 'errorMessage' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'translation_action' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=4)</i>
+      'opened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'erstellte'</font> <i>(length=9)</i>
+      'closed' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'schloss'</font> <i>(length=7)</i>
+      'synchronize' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'?'</font> <i>(length=1)</i>
+      'reopened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&amp;ouml;ffnete'</font> <i>(length=12)</i>
+  'context' <font color='#888a85'>=&gt;</font> <b>resource</b>(<i>4</i><font color='#2e3436'>,</font> <i>stream-context</i>)
+</pre></pre>
+	Date: 18:03:16, 25. Mar. 2014
+
+Logmode: Warning 
+	Message: file_get_contents(): Filename cannot be empty
+	File: /home/patrick/Documents/Aptana Studio 3 Workspace/PCMS/plugins/content/plugin_GithubEvents/plugin_GithubEvents.php
+	Line: 14
+	Context: <pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=4)</i>
+  'page' <font color='#888a85'>=&gt;</font> &amp;
+    <b>object</b>(<i>Page</i>)[<i>21</i>]
+      <i>private</i> 'js_strings' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'js_files' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'cssFiles' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/modules/mod_article/template/article_entry.css'</font> <i>(length=51)</i>
+          1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/plugins/content/plugin_Loginform/css/form.css'</font> <i>(length=50)</i>
+      <i>private</i> 'metaInfo' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          'author' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+          'Content-Type' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+      <i>public</i> 'title' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Alle Artikel'</font> <i>(length=12)</i>
+      <i>public</i> 'mainContent' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Impressum&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/6&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Weiterf&amp;uuml;hrende Links&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/5&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;'...</font> <i>(length=715)</i>
+      <i>public</i> 'errorCode' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      <i>public</i> 'errorMessage' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'translation_action' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=4)</i>
+      'opened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'erstellte'</font> <i>(length=9)</i>
+      'closed' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'schloss'</font> <i>(length=7)</i>
+      'synchronize' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'?'</font> <i>(length=1)</i>
+      'reopened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&amp;ouml;ffnete'</font> <i>(length=12)</i>
+  'context' <font color='#888a85'>=&gt;</font> <b>resource</b>(<i>4</i><font color='#2e3436'>,</font> <i>stream-context</i>)
+  'link' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+</pre></pre>
+	Date: 18:03:16, 25. Mar. 2014
+
+Logmode: Warning 
+	Message: Invalid argument supplied for foreach()
+	File: /home/patrick/Documents/Aptana Studio 3 Workspace/PCMS/plugins/content/plugin_GithubEvents/plugin_GithubEvents.php
+	Line: 19
+	Context: <pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=8)</i>
+  'page' <font color='#888a85'>=&gt;</font> &amp;
+    <b>object</b>(<i>Page</i>)[<i>21</i>]
+      <i>private</i> 'js_strings' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'js_files' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'cssFiles' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/modules/mod_article/template/article_entry.css'</font> <i>(length=51)</i>
+          1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/plugins/content/plugin_Loginform/css/form.css'</font> <i>(length=50)</i>
+      <i>private</i> 'metaInfo' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          'author' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+          'Content-Type' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+      <i>public</i> 'title' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Alle Artikel'</font> <i>(length=12)</i>
+      <i>public</i> 'mainContent' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Impressum&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/6&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Weiterf&amp;uuml;hrende Links&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/5&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;'...</font> <i>(length=715)</i>
+      <i>public</i> 'errorCode' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      <i>public</i> 'errorMessage' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'translation_action' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=4)</i>
+      'opened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'erstellte'</font> <i>(length=9)</i>
+      'closed' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'schloss'</font> <i>(length=7)</i>
+      'synchronize' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'?'</font> <i>(length=1)</i>
+      'reopened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&amp;ouml;ffnete'</font> <i>(length=12)</i>
+  'context' <font color='#888a85'>=&gt;</font> <b>resource</b>(<i>4</i><font color='#2e3436'>,</font> <i>stream-context</i>)
+  'link' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  'github_response' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  'decoded' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  'content' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;h2&gt;Github Events&lt;/h2&gt;&lt;p&gt;&lt;b&gt;patrick246...&lt;/b&gt;&lt;/p&gt;'</font> <i>(length=49)</i>
+  'i' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+</pre></pre>
+	Date: 18:03:16, 25. Mar. 2014
+
+Logmode: Warning 
+	Message: sprintf(): Too few arguments
+	File: /home/patrick/Documents/Aptana Studio 3 Workspace/PCMS/plugins/content/plugin_GithubEvents/plugin_GithubEvents.php
+	Line: 13
+	Context: <pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=3)</i>
+  'page' <font color='#888a85'>=&gt;</font> &amp;
+    <b>object</b>(<i>Page</i>)[<i>21</i>]
+      <i>private</i> 'js_strings' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'js_files' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'cssFiles' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/modules/mod_article/template/article_entry.css'</font> <i>(length=51)</i>
+          1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/plugins/content/plugin_Loginform/css/form.css'</font> <i>(length=50)</i>
+      <i>private</i> 'metaInfo' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          'author' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+          'Content-Type' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+      <i>public</i> 'title' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Alle Artikel'</font> <i>(length=12)</i>
+      <i>public</i> 'mainContent' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Impressum&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/6&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Weiterf&amp;uuml;hrende Links&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/5&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;'...</font> <i>(length=715)</i>
+      <i>public</i> 'errorCode' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      <i>public</i> 'errorMessage' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'translation_action' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=4)</i>
+      'opened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'erstellte'</font> <i>(length=9)</i>
+      'closed' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'schloss'</font> <i>(length=7)</i>
+      'synchronize' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'?'</font> <i>(length=1)</i>
+      'reopened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&amp;ouml;ffnete'</font> <i>(length=12)</i>
+  'context' <font color='#888a85'>=&gt;</font> <b>resource</b>(<i>5</i><font color='#2e3436'>,</font> <i>stream-context</i>)
+</pre></pre>
+	Date: 18:03:17, 25. Mar. 2014
+
+Logmode: Warning 
+	Message: file_get_contents(): Filename cannot be empty
+	File: /home/patrick/Documents/Aptana Studio 3 Workspace/PCMS/plugins/content/plugin_GithubEvents/plugin_GithubEvents.php
+	Line: 14
+	Context: <pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=4)</i>
+  'page' <font color='#888a85'>=&gt;</font> &amp;
+    <b>object</b>(<i>Page</i>)[<i>21</i>]
+      <i>private</i> 'js_strings' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'js_files' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'cssFiles' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/modules/mod_article/template/article_entry.css'</font> <i>(length=51)</i>
+          1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/plugins/content/plugin_Loginform/css/form.css'</font> <i>(length=50)</i>
+      <i>private</i> 'metaInfo' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          'author' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+          'Content-Type' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+      <i>public</i> 'title' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Alle Artikel'</font> <i>(length=12)</i>
+      <i>public</i> 'mainContent' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Impressum&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/6&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Weiterf&amp;uuml;hrende Links&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/5&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;'...</font> <i>(length=715)</i>
+      <i>public</i> 'errorCode' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      <i>public</i> 'errorMessage' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'translation_action' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=4)</i>
+      'opened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'erstellte'</font> <i>(length=9)</i>
+      'closed' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'schloss'</font> <i>(length=7)</i>
+      'synchronize' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'?'</font> <i>(length=1)</i>
+      'reopened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&amp;ouml;ffnete'</font> <i>(length=12)</i>
+  'context' <font color='#888a85'>=&gt;</font> <b>resource</b>(<i>5</i><font color='#2e3436'>,</font> <i>stream-context</i>)
+  'link' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+</pre></pre>
+	Date: 18:03:17, 25. Mar. 2014
+
+Logmode: Warning 
+	Message: Invalid argument supplied for foreach()
+	File: /home/patrick/Documents/Aptana Studio 3 Workspace/PCMS/plugins/content/plugin_GithubEvents/plugin_GithubEvents.php
+	Line: 19
+	Context: <pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=8)</i>
+  'page' <font color='#888a85'>=&gt;</font> &amp;
+    <b>object</b>(<i>Page</i>)[<i>21</i>]
+      <i>private</i> 'js_strings' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'js_files' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'cssFiles' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/modules/mod_article/template/article_entry.css'</font> <i>(length=51)</i>
+          1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/plugins/content/plugin_Loginform/css/form.css'</font> <i>(length=50)</i>
+      <i>private</i> 'metaInfo' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          'author' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+          'Content-Type' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+      <i>public</i> 'title' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Alle Artikel'</font> <i>(length=12)</i>
+      <i>public</i> 'mainContent' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Impressum&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/6&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Weiterf&amp;uuml;hrende Links&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/5&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;'...</font> <i>(length=715)</i>
+      <i>public</i> 'errorCode' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      <i>public</i> 'errorMessage' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'translation_action' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=4)</i>
+      'opened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'erstellte'</font> <i>(length=9)</i>
+      'closed' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'schloss'</font> <i>(length=7)</i>
+      'synchronize' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'?'</font> <i>(length=1)</i>
+      'reopened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&amp;ouml;ffnete'</font> <i>(length=12)</i>
+  'context' <font color='#888a85'>=&gt;</font> <b>resource</b>(<i>5</i><font color='#2e3436'>,</font> <i>stream-context</i>)
+  'link' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  'github_response' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+  'decoded' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  'content' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;h2&gt;Github Events&lt;/h2&gt;&lt;p&gt;&lt;b&gt;patrick246...&lt;/b&gt;&lt;/p&gt;'</font> <i>(length=49)</i>
+  'i' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+</pre></pre>
+	Date: 18:03:17, 25. Mar. 2014
+
+Logmode: Notice 
+	Message: Undefined variable: link
+	File: /home/patrick/Documents/Aptana Studio 3 Workspace/PCMS/plugins/content/plugin_GithubEvents/plugin_GithubEvents.php
+	Line: 26
+	Context: <pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=3)</i>
+  'page' <font color='#888a85'>=&gt;</font> &amp;
+    <b>object</b>(<i>Page</i>)[<i>21</i>]
+      <i>private</i> 'js_strings' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'js_files' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'cssFiles' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/modules/mod_article/template/article_entry.css'</font> <i>(length=51)</i>
+          1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/plugins/content/plugin_Loginform/css/form.css'</font> <i>(length=50)</i>
+      <i>private</i> 'metaInfo' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          'author' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+          'Content-Type' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+      <i>public</i> 'title' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Alle Artikel'</font> <i>(length=12)</i>
+      <i>public</i> 'mainContent' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Impressum&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/6&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Weiterf&amp;uuml;hrende Links&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/5&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;'...</font> <i>(length=715)</i>
+      <i>public</i> 'errorCode' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      <i>public</i> 'errorMessage' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'translation_action' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=4)</i>
+      'opened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'erstellte'</font> <i>(length=9)</i>
+      'closed' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'schloss'</font> <i>(length=7)</i>
+      'synchronize' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'?'</font> <i>(length=1)</i>
+      'reopened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&amp;ouml;ffnete'</font> <i>(length=12)</i>
+  'tempdir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/tmp/'</font> <i>(length=5)</i>
+</pre></pre>
+	Date: 18:03:44, 25. Mar. 2014
+
+Logmode: Notice 
+	Message: Undefined variable: context
+	File: /home/patrick/Documents/Aptana Studio 3 Workspace/PCMS/plugins/content/plugin_GithubEvents/plugin_GithubEvents.php
+	Line: 26
+	Context: <pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=3)</i>
+  'page' <font color='#888a85'>=&gt;</font> &amp;
+    <b>object</b>(<i>Page</i>)[<i>21</i>]
+      <i>private</i> 'js_strings' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'js_files' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'cssFiles' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/modules/mod_article/template/article_entry.css'</font> <i>(length=51)</i>
+          1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/plugins/content/plugin_Loginform/css/form.css'</font> <i>(length=50)</i>
+      <i>private</i> 'metaInfo' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          'author' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+          'Content-Type' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+      <i>public</i> 'title' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Alle Artikel'</font> <i>(length=12)</i>
+      <i>public</i> 'mainContent' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Impressum&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/6&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Weiterf&amp;uuml;hrende Links&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/5&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;'...</font> <i>(length=715)</i>
+      <i>public</i> 'errorCode' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      <i>public</i> 'errorMessage' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'translation_action' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=4)</i>
+      'opened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'erstellte'</font> <i>(length=9)</i>
+      'closed' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'schloss'</font> <i>(length=7)</i>
+      'synchronize' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'?'</font> <i>(length=1)</i>
+      'reopened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&amp;ouml;ffnete'</font> <i>(length=12)</i>
+  'tempdir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/tmp/'</font> <i>(length=5)</i>
+</pre></pre>
+	Date: 18:03:44, 25. Mar. 2014
+
+Logmode: Warning 
+	Message: file_get_contents(): Filename cannot be empty
+	File: /home/patrick/Documents/Aptana Studio 3 Workspace/PCMS/plugins/content/plugin_GithubEvents/plugin_GithubEvents.php
+	Line: 26
+	Context: <pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=3)</i>
+  'page' <font color='#888a85'>=&gt;</font> &amp;
+    <b>object</b>(<i>Page</i>)[<i>21</i>]
+      <i>private</i> 'js_strings' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'js_files' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'cssFiles' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/modules/mod_article/template/article_entry.css'</font> <i>(length=51)</i>
+          1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/plugins/content/plugin_Loginform/css/form.css'</font> <i>(length=50)</i>
+      <i>private</i> 'metaInfo' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          'author' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+          'Content-Type' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+      <i>public</i> 'title' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Alle Artikel'</font> <i>(length=12)</i>
+      <i>public</i> 'mainContent' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Impressum&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/6&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Weiterf&amp;uuml;hrende Links&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/5&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;'...</font> <i>(length=715)</i>
+      <i>public</i> 'errorCode' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      <i>public</i> 'errorMessage' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'translation_action' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=4)</i>
+      'opened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'erstellte'</font> <i>(length=9)</i>
+      'closed' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'schloss'</font> <i>(length=7)</i>
+      'synchronize' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'?'</font> <i>(length=1)</i>
+      'reopened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&amp;ouml;ffnete'</font> <i>(length=12)</i>
+  'tempdir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/tmp/'</font> <i>(length=5)</i>
+</pre></pre>
+	Date: 18:03:44, 25. Mar. 2014
+
+Logmode: Notice 
+	Message: Undefined variable: link
+	File: /home/patrick/Documents/Aptana Studio 3 Workspace/PCMS/plugins/content/plugin_GithubEvents/plugin_GithubEvents.php
+	Line: 26
+	Context: <pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=3)</i>
+  'page' <font color='#888a85'>=&gt;</font> &amp;
+    <b>object</b>(<i>Page</i>)[<i>21</i>]
+      <i>private</i> 'js_strings' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'js_files' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'cssFiles' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/modules/mod_article/template/article_entry.css'</font> <i>(length=51)</i>
+          1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/plugins/content/plugin_Loginform/css/form.css'</font> <i>(length=50)</i>
+      <i>private</i> 'metaInfo' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          'author' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+          'Content-Type' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+      <i>public</i> 'title' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Alle Artikel'</font> <i>(length=12)</i>
+      <i>public</i> 'mainContent' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Impressum&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/6&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Weiterf&amp;uuml;hrende Links&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/5&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;'...</font> <i>(length=715)</i>
+      <i>public</i> 'errorCode' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      <i>public</i> 'errorMessage' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'translation_action' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=4)</i>
+      'opened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'erstellte'</font> <i>(length=9)</i>
+      'closed' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'schloss'</font> <i>(length=7)</i>
+      'synchronize' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'?'</font> <i>(length=1)</i>
+      'reopened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&amp;ouml;ffnete'</font> <i>(length=12)</i>
+  'tempdir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/tmp/'</font> <i>(length=5)</i>
+</pre></pre>
+	Date: 18:03:44, 25. Mar. 2014
+
+Logmode: Notice 
+	Message: Undefined variable: context
+	File: /home/patrick/Documents/Aptana Studio 3 Workspace/PCMS/plugins/content/plugin_GithubEvents/plugin_GithubEvents.php
+	Line: 26
+	Context: <pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=3)</i>
+  'page' <font color='#888a85'>=&gt;</font> &amp;
+    <b>object</b>(<i>Page</i>)[<i>21</i>]
+      <i>private</i> 'js_strings' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'js_files' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'cssFiles' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/modules/mod_article/template/article_entry.css'</font> <i>(length=51)</i>
+          1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/plugins/content/plugin_Loginform/css/form.css'</font> <i>(length=50)</i>
+      <i>private</i> 'metaInfo' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          'author' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+          'Content-Type' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+      <i>public</i> 'title' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Alle Artikel'</font> <i>(length=12)</i>
+      <i>public</i> 'mainContent' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Impressum&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/6&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Weiterf&amp;uuml;hrende Links&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/5&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;'...</font> <i>(length=715)</i>
+      <i>public</i> 'errorCode' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      <i>public</i> 'errorMessage' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'translation_action' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=4)</i>
+      'opened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'erstellte'</font> <i>(length=9)</i>
+      'closed' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'schloss'</font> <i>(length=7)</i>
+      'synchronize' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'?'</font> <i>(length=1)</i>
+      'reopened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&amp;ouml;ffnete'</font> <i>(length=12)</i>
+  'tempdir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/tmp/'</font> <i>(length=5)</i>
+</pre></pre>
+	Date: 18:03:44, 25. Mar. 2014
+
+Logmode: Warning 
+	Message: file_get_contents(): Filename cannot be empty
+	File: /home/patrick/Documents/Aptana Studio 3 Workspace/PCMS/plugins/content/plugin_GithubEvents/plugin_GithubEvents.php
+	Line: 26
+	Context: <pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=3)</i>
+  'page' <font color='#888a85'>=&gt;</font> &amp;
+    <b>object</b>(<i>Page</i>)[<i>21</i>]
+      <i>private</i> 'js_strings' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'js_files' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'cssFiles' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/modules/mod_article/template/article_entry.css'</font> <i>(length=51)</i>
+          1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/plugins/content/plugin_Loginform/css/form.css'</font> <i>(length=50)</i>
+      <i>private</i> 'metaInfo' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          'author' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+          'Content-Type' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+      <i>public</i> 'title' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Alle Artikel'</font> <i>(length=12)</i>
+      <i>public</i> 'mainContent' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Impressum&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/6&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Weiterf&amp;uuml;hrende Links&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/5&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;'...</font> <i>(length=715)</i>
+      <i>public</i> 'errorCode' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      <i>public</i> 'errorMessage' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'translation_action' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=4)</i>
+      'opened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'erstellte'</font> <i>(length=9)</i>
+      'closed' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'schloss'</font> <i>(length=7)</i>
+      'synchronize' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'?'</font> <i>(length=1)</i>
+      'reopened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&amp;ouml;ffnete'</font> <i>(length=12)</i>
+  'tempdir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/tmp/'</font> <i>(length=5)</i>
+</pre></pre>
+	Date: 18:03:44, 25. Mar. 2014
+
+Logmode: Notice 
+	Message: Undefined variable: tmpdir
+	File: /home/patrick/Documents/Aptana Studio 3 Workspace/PCMS/plugins/content/plugin_GithubEvents/plugin_GithubEvents.php
+	Line: 26
+	Context: <pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=3)</i>
+  'page' <font color='#888a85'>=&gt;</font> &amp;
+    <b>object</b>(<i>Page</i>)[<i>21</i>]
+      <i>private</i> 'js_strings' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'js_files' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'cssFiles' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/modules/mod_article/template/article_entry.css'</font> <i>(length=51)</i>
+          1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/plugins/content/plugin_Loginform/css/form.css'</font> <i>(length=50)</i>
+      <i>private</i> 'metaInfo' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          'author' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+          'Content-Type' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+      <i>public</i> 'title' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Alle Artikel'</font> <i>(length=12)</i>
+      <i>public</i> 'mainContent' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Impressum&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/6&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Weiterf&amp;uuml;hrende Links&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/5&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;'...</font> <i>(length=715)</i>
+      <i>public</i> 'errorCode' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      <i>public</i> 'errorMessage' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'translation_action' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=4)</i>
+      'opened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'erstellte'</font> <i>(length=9)</i>
+      'closed' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'schloss'</font> <i>(length=7)</i>
+      'synchronize' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'?'</font> <i>(length=1)</i>
+      'reopened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&amp;ouml;ffnete'</font> <i>(length=12)</i>
+  'tempdir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/tmp/'</font> <i>(length=5)</i>
+</pre></pre>
+	Date: 18:03:45, 25. Mar. 2014
+
+Logmode: Warning 
+	Message: file_get_contents(github_plugin.cache): failed to open stream: No such file or directory
+	File: /home/patrick/Documents/Aptana Studio 3 Workspace/PCMS/plugins/content/plugin_GithubEvents/plugin_GithubEvents.php
+	Line: 26
+	Context: <pre><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=3)</i>
+  'page' <font color='#888a85'>=&gt;</font> &amp;
+    <b>object</b>(<i>Page</i>)[<i>21</i>]
+      <i>private</i> 'js_strings' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'js_files' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>private</i> 'cssFiles' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/modules/mod_article/template/article_entry.css'</font> <i>(length=51)</i>
+          1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/cms/plugins/content/plugin_Loginform/css/form.css'</font> <i>(length=50)</i>
+      <i>private</i> 'metaInfo' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=2)</i>
+          'author' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+          'Content-Type' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              ...
+      <i>public</i> 'title' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Alle Artikel'</font> <i>(length=12)</i>
+      <i>public</i> 'mainContent' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Impressum&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/6&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;div class=&#39;mod_article_info&#39;&gt;&#10;		&lt;h1&gt;Weiterf&amp;uuml;hrende Links&lt;/h1&gt;&#10;		Author: patrick246	&lt;/div&gt;&#10;	&lt;div class=&#39;article_content&#39;&gt;&#10;			&lt;/div&gt;&#10;	&lt;p&gt;&#10;			&lt;a href=&#39;/cms/article/show/5&#39;&gt;Zum Artikel&lt;/a&gt;&#10;		&lt;/p&gt;&#10;&lt;/article&gt;&lt;article class=&#39;mod_article_entry&#39;&gt;&#10;	&lt;'...</font> <i>(length=715)</i>
+      <i>public</i> 'errorCode' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>0</font>
+      <i>public</i> 'errorMessage' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'translation_action' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=4)</i>
+      'opened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'erstellte'</font> <i>(length=9)</i>
+      'closed' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'schloss'</font> <i>(length=7)</i>
+      'synchronize' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'?'</font> <i>(length=1)</i>
+      'reopened' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&amp;ouml;ffnete'</font> <i>(length=12)</i>
+  'tempdir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/tmp/'</font> <i>(length=5)</i>
+</pre></pre>
+	Date: 18:03:45, 25. Mar. 2014
+
