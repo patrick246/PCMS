@@ -30,6 +30,7 @@ class plugin_GithubEvents extends Plugin
 			if((time() - $github_response[0]) > 10*60 )
 			{
 				$github_response = $this->getGithubResponse();
+				file_put_contents($tempdir . 'github_plugin.cache', time() . '::::' . $github_response);
 			}
 			else 
 			{
