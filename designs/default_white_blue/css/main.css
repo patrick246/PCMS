@@ -4,6 +4,7 @@ body, html
 	padding: 0;
 	overflow: auto;
 	height: 100%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .container
@@ -16,8 +17,12 @@ body, html
 {
 	border-bottom: 20px solid #09f;
 	margin-bottom: 20px;
-	background-color: #E6F5FF;
+
 	background-color: #66c2ff;
+	
+	background-color: #fff;
+	
+	box-shadow: 0 0 5px #333;
 }
 
 .navbar .navbar-brand
@@ -54,12 +59,14 @@ body, html
 	display: block;
 	padding: 25px 10px 15px 10px;
 	border-bottom: 10px solid transparent;
+
 }
 
 .navbar .navbar-nav li a:hover
 {
-	background-color: #CCEBFF;
-	border-bottom: 10px solid #333;
+	/*background-color: #CCEBFF;*/
+	/*background-color: #f0f9ff;*/
+	border-bottom: 10px solid #4c4c4c;
 }
 
 #nonFooter
@@ -99,6 +106,14 @@ footer ul
 	padding-bottom: 250px;
 }
 
+.sidebox
+{
+	margin-bottom: 50px;
+}
+
+/* ### Element Styles ### */
+
+/* Heading styles */
 h1, h2, h3, h4, h5, h6
 {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -122,9 +137,11 @@ h2
 
 hr
 {
-	border-color: #333;
+	border: none;
+	border-bottom: 1px solid #ddd;
 }
 
+/* Link styles */
 a
 {
 	color: #0077B3;
@@ -136,7 +153,20 @@ a:hover
 	text-decoration: underline;
 }
 
+
+/* Form styles */
 input:not([type='submit'])
 {
 	width: 100%;
+	border: 1px solid #ddd;
+	margin-bottom: 5px;
+	border-radius: 10px;
+	padding: 5px;
+	transition: border .5s;
 }
+
+input:not([type='submit']):focus
+{
+	border: 1px solid #66c2ff;
+}
+

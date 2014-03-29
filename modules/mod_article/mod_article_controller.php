@@ -54,6 +54,7 @@ class mod_article_controller extends Controller
 			{
 				$page->errorCode = 404;
 				$page->errorMessage = "Es wurde kein passender Artikel gefunden";
+				return $page;
 			}
 		} else {
 			$article = $articleTable->find('url_title', $id, "=");
@@ -61,6 +62,7 @@ class mod_article_controller extends Controller
 			{
 				$page->errorCode = 404;
 				$page->errorMessage = "Es wurde kein passender Artikel gefunden";
+				return $page;
 			}
 			else
 			{

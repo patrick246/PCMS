@@ -27,10 +27,10 @@
 						<?=$tpl_content?>
 					</div>
 					<div class="col gu1">
-						<div id="sidebarBoxOne">
+						<div id="sidebarBoxOne" class="sidebox">
 							<?=$tpl_sidebarBox1?>
 						</div>
-						<div id="sidebarBoxTwo">
+						<div id="sidebarBoxTwo" class="sidebox">
 							<?=$tpl_sidebarBox2?>
 						</div>
 					</div>

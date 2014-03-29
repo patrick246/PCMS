@@ -12,8 +12,6 @@ class plugin_Loginform extends Plugin
 		else
 		{
 			$template = new Template($this->app->workDir . 'plugins/content/plugin_Loginform/templates/loginform.tpl.php');
-			
-			$page->addCssFile('/' . SUBDIR . '/plugins/content/plugin_Loginform/css/form.css');
 		}
 		return $template->display();
 	}
