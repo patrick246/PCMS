@@ -1,4 +1,17 @@
 PCMS
 ====
 
-PCMS is a small and extendable CMS. The installer is currently work in process, so no simple install for now (just got a few bugs to fix and it will be pushed!)
+PCMS is a small and extendable CMS. 
+
+## Installation
+
+PCMS comes with an installer available under /installation. Just follow the steps. You just need to create a Database by yourself.
+
+## ToDo-List
+You can see the list under [doc/ToDo-List.md](doc/ToDo-list.md).
+
+## Tutorials for creating designs
+Creating designs is really easy. You just need to make shure that it can integrate into PCMS by providing a information file and use a few placeholders. 
+There are no other limits on your creativity.
+
+[Creating a new Design](doc/Create a new Design.md)
