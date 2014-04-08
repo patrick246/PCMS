@@ -27,7 +27,7 @@ class mod_article_controller extends Controller
 			{
 				$tpl->set('content', $entry->content, $tpl->getNoEscapeFunc());
 			}
-			$tpl->set('content', '');
+
 			$tpl->set('title', $entry->title);
 			$tpl->set('link_to_article', true);
 			$content = $tpl->display();

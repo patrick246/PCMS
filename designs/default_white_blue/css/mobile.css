@@ -1,0 +1,71 @@
+body
+{
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+
+.container
+{
+	width: 100%;
+}
+
+.navbar
+{
+	background-color: #0099FF;
+	padding: 5px;
+}
+
+.navbar ul
+{
+	list-style-type: none;
+}
+
+.navbar ul li
+{
+	margin-bottom: 5px;
+}
+
+.navbar ul li a
+{
+	color: white;
+}
+
+.navbar-brand
+{
+	font-weight: bold;
+	font-size: 20pt;
+	background-color: #0099FF;
+	color: white;
+	
+	padding: 5px;
+	border-bottom: 1px solid #333;
+}
+
+.sidebox
+{
+	padding: 5px 15px;
+	border-bottom: 1px solid #ddd;
+}
+
+.sidebox:nth-child(odd)
+{
+	background-color: #ddd;
+}
+
+footer
+{
+	padding: 15px;
+	background-color: #222;
+	color: white;
+}
+
+footer h2
+{
+	color: #ddd;
+}
+
+footer ul
+{
+	list-style-type: none;
+}

@@ -3,7 +3,7 @@
 	<head>
 		<title><?=$tpl_title?></title>
 		<link rel="stylesheet" href="<?=$tpl_root?>designs/default_white_blue/css/main.css">
-		<link rel="stylesheet" href="<?=$tpl_root?>designs/default_white_blue/css/1000_4_20.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<?php foreach($tpl_css as $css) echo $css;?>
 		<?php foreach ($tpl_meta as $meta) echo $meta;?>
 	</head>
