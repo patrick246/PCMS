@@ -12,7 +12,9 @@
 			<div class="navbar clearfix">
 				<div class="container clearfix">
 					<div class="navbar-brand">
-						<?=$tpl_header?>
+						<h1>
+							<?=$tpl_header?>
+						</h1>
 					</div>
 					<ul class="navbar-nav">
 						<?php foreach($tpl_menu as $entry){?>
