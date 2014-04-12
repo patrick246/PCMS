@@ -13,3 +13,4 @@ If anyone wants to contribute, feel free to implement one of this features. If y
 * Design Management
 * Module/Plugin installation
 * Create and Edit Menu links
+* Interface to change the footer's content
