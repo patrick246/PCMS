@@ -40,28 +40,7 @@
 			</div>
 		</div>
 		<footer class="row">
-			<div class="container">
-				<div class="col gu1">
-					<h2>Über</h2>
-					<ul>
-						<li><a href="#">Über mich</a></li>
-						<li><a href="#">Über das CMS</a></li>
-						<li><a href="#">Impressum</a></li>
-					</ul>
-				</div>
-				<div class="col gu1">
-					<h2>Tolle Webseiten</h2>
-					<ul>
-						<li><a href="http://blackphantom.de/" target="_blank">Blackphantom.de</a></li>
-						<li><a href="http://menzerath.eu/" target="_blank">Menzerath.eu</a></li>
-						<li><a href="http://ratgeber---forum.de/" target="_blank">Das Ratgeber-Forum</a></li>
-						<li><a href="http://thiefas.de/" target="_blank">Thiefas.DE</a></li>
-					</ul>
-				</div>
-				<div class="col gu1">
-					<h2></h2>
-				</div>
-			</div>
+			<?=$tpl_boxFooter?>
 		</footer>
 	</body>
 </html>

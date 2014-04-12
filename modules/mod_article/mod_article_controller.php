@@ -11,7 +11,7 @@ class mod_article_controller extends Controller
 			if($elem1->time_created == $elem2->time_created) return 0;
 			return ($elem1->time_created > $elem2->time_created) ? -1 : 1;
 		});
-		$page->mainContent = "";
+		$page->mainContent = "<h2>Alle Artikel</h2>";
 		
 		foreach($entries as $key => $entry)
 		{

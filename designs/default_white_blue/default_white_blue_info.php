@@ -8,7 +8,7 @@ class default_white_blue_info implements DesignInfo
 
     public function getPluginBoxes()
     {
-        return array('sidebarBox1', 'sidebarBox2');
+        return array('sidebarBox1', 'sidebarBox2', 'boxFooter');
     }
 
     public function getErrorTemplateFile()
