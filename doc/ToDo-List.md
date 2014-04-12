@@ -12,4 +12,4 @@ If anyone wants to contribute, feel free to implement one of this features. If y
 * Advertising Management 					(See the Advertising plugin in the Frontend section)
 * Design Management
 * Module/Plugin installation
-
+* Create and Edit Menu links
