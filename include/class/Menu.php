@@ -29,6 +29,7 @@ class Menu
 		if($menuentry->type == 'dropdown')
 		{
 			$menuentry->link = '#';
+			$menuentry->text .= ' &#9662;';
 			$classMenuEntry = new MenuEntry($menuentry);
 			$subEntries = $this->table->find('parent', $menuentry->id, '=');
 			foreach ($subEntries as $subEntry)

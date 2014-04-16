@@ -13,12 +13,23 @@
 				<div class="container clearfix">
 					<div class="navbar-brand">
 						<h1>
-							<?=$tpl_header?>
+							<a href="<?=$tpl_root?>"><?=$tpl_header?></a>
 						</h1>
 					</div>
 					<ul class="navbar-nav">
 						<?php foreach($tpl_menu as $entry){?>
-							<li><a href="<?=$entry->link?>"><?=$entry->text?></a></li>
+							<li <?=($entry->type == 'dropdown')?'class="dropdown"':''?>>
+								<a href="<?=$entry->link?>">
+									<?=$entry->text?>
+								</a>
+								<?php if($entry->type == 'dropdown'){ ?>
+									<ul>
+										<?php foreach($entry->children as $child){ ?>
+											<li><a href="<?=$child->link?>"><?=$child->text?></a></li>
+										<?php } ?>
+									</ul>
+								<?php } ?>
+							</li>
 						<?php } ?>
 					</ul>
 				</div>

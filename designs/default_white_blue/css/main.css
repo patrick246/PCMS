@@ -4,8 +4,10 @@
 	zoom: 1;
 }
 
-@import url('desktop.css') (min-width: 768px);
-@import url('mobile.css') (max-width: 767px);
+@import url('desktop.css') (min-width: 1000px);
+@import url('mobile.css') (max-width: 999px);
+
+
 /* ### Element Styles ### */
 body, html
 {
