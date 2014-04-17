@@ -24,6 +24,7 @@ class Logger
 		// This is just a workaround function to give it access to the $app variable
 		$bootstrap_log_function = function($errno, $message, $filename, $linenumber, $vars) use (&$app)
 		{
+			
 			switch($errno)
 			{
 				case E_WARNING:
@@ -45,13 +46,14 @@ class Logger
 				default:
 					$app->logger->log(LogMode::Other, $message, $filename, $linenumber, $vars);
 			}
+			 
 			return true;
 		};
 		
 		// Now open the file
-		$this->res = fopen($this->app->workDir . $destfile, "a");
+		/*$this->res = fopen($this->app->workDir . $destfile, "a");
 		if(!$this->res)
-			die("Logger can't open destination file");
+			die("Logger can't open destination file");*/
 		
 		set_error_handler($bootstrap_log_function, E_ALL | E_STRICT);
 	}
