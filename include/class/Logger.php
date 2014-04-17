@@ -77,7 +77,7 @@ class Logger
 			varDump($vars),
 			date("H:m:i, d. M. Y")
 		);
-		fwrite($this->res, $logtext);
+		//fwrite($this->res, $logtext);
 		if($this->debug)
 		{
 			echo nl2br($logtext);
