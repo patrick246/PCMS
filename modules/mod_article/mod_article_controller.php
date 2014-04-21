@@ -5,22 +5,18 @@ class mod_article_controller extends Controller
 	{
 		$page = new Page();
 		
-		$entries = $this->app->database->getTable("Article")->getAllEntries();
-		usort($entries, function($elem1, $elem2)
-		{
-			if($elem1->time_created == $elem2->time_created) return 0;
-			return ($elem1->time_created > $elem2->time_created) ? -1 : 1;
-		});
+		$entries = $this->app->database->getTable("Article")->getAllEntries('time_created', 'DESC');
+		
 		$page->mainContent = "<h2>Alle Artikel</h2>";
 		
-		foreach($entries as $key => $entry)
+		foreach($entries as $entry)
 		{
 			$user = $this->app->database->getTable("User")->{$entry->author_id};
 			$tpl = new Template($this->app->workDir . Config::MODULE_DIR . 'mod_article/template/article_entry.tpl.php');
 			$tpl->set('id', $entry->id);
 			$tpl->set('author', $user->name);
 			
-				$tpl->set('content', $entry->content, $tpl->getNoEscapeFunc());
+			$tpl->set('content', $entry->content, $tpl->getNoEscapeFunc());
 
 			$tpl->set('title', $entry->title);
 			$tpl->set('link_to_article', true);
@@ -30,7 +26,7 @@ class mod_article_controller extends Controller
 		}
 		$page->title = "Alle Artikel";
 		$page->addMeta("author", '', "name");
-		$page->addCssFile('/' . SUBDIR . '/' . Config::MODULE_DIR . "mod_article/template/article_entry.css");
+		$page->addCssFile(URL_SUBDIR .  Config::MODULE_DIR . "mod_article/template/article_entry.css");
 		return $page;
 	}
 	
@@ -47,17 +43,13 @@ class mod_article_controller extends Controller
 			}
 			else
 			{
-				$page->errorCode = 404;
-				$page->errorMessage = "Es wurde kein passender Artikel gefunden";
-				return $page;
+				return generateResourceNotFoundPage();
 			}
 		} else {
 			$article = $articleTable->find('url_title', $id, "=");
 			if(count($article) == 0)
 			{
-				$page->errorCode = 404;
-				$page->errorMessage = "Es wurde kein passender Artikel gefunden";
-				return $page;
+				return generateResourceNotFoundPage();
 			}
 			else
 			{
@@ -85,12 +77,15 @@ class mod_article_controller extends Controller
 		}
 		
 		$template->set('comments', $this->getComments($article), $template->getNoEscapeFunc());
+		$template->set('logged_on', $this->app->user != null);
+		$template->set('needs_captcha', !$this->app->user->hasRight('comment_without_captcha'));
+		$template->set('captcha_code', $this->app->captchaManager->getHTML(), $template->getNoEscapeFunc());
 		
 		$article->hits++;
 		$article->save();
 		$page->mainContent = $template->display();
 		$page->title = $article->title;
-		$page->addCssFile('/' . SUBDIR . '/modules/mod_article/template/article_entry.css');
+		$page->addCssFile(URL_SUBDIR . 'modules/mod_article/template/article_entry.css');
 		return $page;
 	}
 	
@@ -147,5 +142,12 @@ class mod_article_controller extends Controller
 			$commentsStr .= $tpl->display();
 		}
 		return $commentsStr;
+	}
+
+	public function addComment()
+	{
+		if(!CSRF::check())
+			return generateInvalidTokenPage();
+		
 	}
 }

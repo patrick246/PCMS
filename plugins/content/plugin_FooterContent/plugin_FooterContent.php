@@ -1,5 +1,5 @@
 <?php
-class plugin_FooterContent extends Plugin
+class plugin_FooterContent extends Plugin_Plugin
 {	
 	public function display(&$page)
 	{

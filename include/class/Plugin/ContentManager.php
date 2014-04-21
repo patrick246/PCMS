@@ -1,5 +1,5 @@
 <?php
-class PluginManager
+class Plugin_ContentManager
 {
 	/**
 	 * 

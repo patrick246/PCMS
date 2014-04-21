@@ -47,6 +47,7 @@ class CMS
 		}
 
 		$this->menu = new Menu($this);
+		$this->captchaManager = new Plugin_CaptchaManager($this);
 	}
 
 	/**
@@ -56,23 +57,10 @@ class CMS
 	public $database;
 	
 	/**
-	 * This is the HTTP-Request with get and post fields
-	 * @var Request
-	 */
-	public $request;
-	
-	/**
 	 * This is the main instance of the logger class
 	 * @var Logger
 	 */
 	public $logger;
-	
-	/**
-	 * The work dir is the directory we are running in.
-	 * It has a trailing slash!
-	 * @var string
-	 */
-	public $workDir;
 	
 	/**
 	 * An instance of the menu class
@@ -86,6 +74,11 @@ class CMS
 	 */
 	public $user;
 	
+	/**
+	 * A class responsible for providing and checking Captchas
+	 * @var Plugin_CaptchaManager
+	 */
+	public $captchaManager;
 	
 	/* Methods */
 	public function run() 

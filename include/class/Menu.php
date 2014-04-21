@@ -40,7 +40,7 @@ class Menu
 		}
 		else
 		{
-			$menuentry->link = '/' . SUBDIR . '/' . $menuentry->link;
+			$menuentry->link = URL_SUBDIR . $menuentry->link;
 			return new MenuEntry($menuentry);
 		}
 	}

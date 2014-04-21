@@ -28,7 +28,7 @@ class Template
 			return $elem;
 		};
 		
-		$this->set('root', '/' . SUBDIR . '/');
+		$this->set('root', URL_SUBDIR);
 		
 	}
 	

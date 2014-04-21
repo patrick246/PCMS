@@ -65,7 +65,7 @@ class DesignManager
 		} 
 		else 
 		{
-			$pluginManager = new PluginManager($this->app, $page);
+			$pluginManager = new Plugin_ContentManager($this->app, $page);
 			// Set the content plugin boxes
 			foreach($this->info->getPluginBoxes() as $pluginBox)
 			{

@@ -1,5 +1,5 @@
 <?php
-class plugin_Loginform extends Plugin
+class plugin_Loginform extends Plugin_Plugin
 {	
 	public function display(&$page)
 	{

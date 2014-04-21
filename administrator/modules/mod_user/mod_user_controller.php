@@ -19,7 +19,7 @@ class mod_user_controller extends Controller
 			$role_name = ($roleTable->idExists($user->role_id)) ? $roleTable->{$user->role_id}->name : 'Unbekannt';
 			$tpl = new Template($this->moduleBaseDir . 'templates/User/tableAll.entry.tpl.php');
 			$tpl->set('id', $user->id);
-			$tpl->set('name', sprintf('<a href="/%s/admin/user/detail/%d">%s</a>', SUBDIR, $user->id, $user->name), $tpl->getNoEscapeFunc());
+			$tpl->set('name', sprintf('<a href="%sadmin/user/detail/%d">%s</a>', URL_SUBDIR, $user->id, $user->name), $tpl->getNoEscapeFunc());
 			$tpl->set('email', $user->email);
 			$tpl->set('activated', $user->activated);
 			$tpl->set('role', $role_name);
@@ -29,7 +29,7 @@ class mod_user_controller extends Controller
 		$template->set('entries', $entries, $template->getNoEscapeFunc());
 		$page->mainContent = $template->display();
 		$page->title = 'Userübersicht';
-		$page->addCssFile('/'.SUBDIR . '/administrator/modules/mod_user/css/showAll.css');
+		$page->addCssFile(URL_SUBDIR . 'administrator/modules/mod_user/css/showAll.css');
 		return $page;
 	}
 	

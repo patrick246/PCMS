@@ -40,6 +40,20 @@ h2
 	color: #333;
 }
 
+h3
+{
+	font-weight: 500;
+	font-size: 28px;
+	color: #333;
+}
+
+h4
+{
+	font-weight: 500;
+	font-size: 24px;
+	color: #333;
+}
+
 hr
 {
 	border: none;
@@ -60,28 +74,46 @@ a:hover
 
 
 /* Form styles */
-input
+input, textarea
 {
 	transition: border .5s;
 	margin-bottom: 15px;
 }
 
-input:not([type='submit'])
+input:not([type='submit']), textarea
 {
 	width: 100%;
-	border: 1px solid #ddd;
+	border: 1px solid #ddd !important; 
 	padding: 5px;
 	
 }
 
-input:focus, input[type='submit']:hover
+input:focus, input[type='submit']:hover, textarea:focus
 {
-	border: 1px solid #66c2ff;
+	border: 1px solid #66c2ff !important;
 }
 
 input[type='submit']
 {
 	border: 1px solid #ddd;
 	padding: 5px;
+	margin-top: 15px;
+}
+
+label
+{
+	font-weight: bold;
+}
+
+textarea
+{
+	resize: vertical;
+	height: 100px;
+	margin-bottom: 10px;
+}
+
+.form-control
+{
+	margin-bottom: 5px;
 }
 

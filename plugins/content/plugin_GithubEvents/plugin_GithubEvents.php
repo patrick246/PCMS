@@ -1,5 +1,5 @@
 <?php
-class plugin_GithubEvents extends Plugin
+class plugin_GithubEvents extends Plugin_Plugin
 {
 	public function display(&$page)
 	{

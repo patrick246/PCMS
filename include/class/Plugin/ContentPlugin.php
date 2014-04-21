@@ -1,15 +1,7 @@
 <?php
-abstract class Plugin
+if(!defined('_EXEC')) die('No direct access!');
+abstract class Plugin_ContentPlugin extends Plugin_Plugin
 {
-	/**
-	 * Initializes the plugin base class
-	 * @param CMS $app
-	 */
-	public function __construct(&$app)
-	{
-		$this->app = &$app;
-	}
-	
 	/**
 	 * Returns the content of the plugin
 	 * @param Page $page
@@ -27,5 +19,4 @@ abstract class Plugin
 		return true;
 	}
 	
-	protected $app;
 }

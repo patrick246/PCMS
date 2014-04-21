@@ -1,11 +1,6 @@
 <?php
-class plugin_Skeleton extends Plugin
-{
-	public function __construct(&$app)
-	{
-		parent::__construct($app);
-	}
-	
+class plugin_Skeleton extends Plugin_Plugin
+{	
 	public function display(&$page)
 	{
 		

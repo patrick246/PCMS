@@ -4,7 +4,7 @@ class mod_dashboard_controller extends Controller
 	public function show()
 	{
 		$page = new Page();
-		$page->addCssFile('/'. SUBDIR . '/administrator/modules/mod_dashboard/css/mod_dashboard_main.css');
+		$page->addCssFile(URL_SUBDIR . 'administrator/modules/mod_dashboard/css/mod_dashboard_main.css');
 		
 		$tpl = new Template($this->app->workDir . '/administrator/modules/mod_dashboard/templates/dashboard.tpl.php');
 		
