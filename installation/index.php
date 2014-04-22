@@ -3,7 +3,8 @@ session_start();
 
 class DummyCMS{};
 
-define('SUBDIR', substr(str_replace('/installation', '', dirname($_SERVER['PHP_SELF'])), 1));
+define('URL_SUBDIR', str_replace('/installation', '', dirname($_SERVER['PHP_SELF'])) . '/');
+define('PATH_SUBDIR', dirname(dirname(__FILE__)) . '/');
 
 function __autoload($classname)
 {
