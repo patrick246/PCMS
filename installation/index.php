@@ -155,18 +155,16 @@ else if($_GET['step'] == 'check')
 	
 	$phpVersion = version_compare(phpversion(), '5.3.0', '>=');
 	$pdoMysqlDriver = in_array('mysql', PDO::getAvailableDrivers());
-	$logWritable = is_writable('../log/') && is_writable('../log/log.txt') && is_writable('../log/admin_log.txt');
 	$apacheRunning = strpos($_SERVER['SERVER_SOFTWARE'], 'Apache') !== false;
 	$modRewriteRunning = in_array('mod_rewrite', apache_get_modules());
 	
 	$content_template = new Template('templates/check.tpl.php');
 	$content_template->set('phpversion', $phpVersion);
 	$content_template->set('pdo_active', $pdoMysqlDriver);
-	$content_template->set('log_writable', $logWritable);
 	$content_template->set('apache', $apacheRunning);
 	$content_template->set('mod_rewrite', $modRewriteRunning);
 	
-	$allOK = $phpVersion && $pdoMysqlDriver && $logWritable && $apacheRunning && $modRewriteRunning;
+	$allOK = $phpVersion && $pdoMysqlDriver && $apacheRunning && $modRewriteRunning;
 	$content_template->set('next', $allOK);
 	
 	if($allOK)

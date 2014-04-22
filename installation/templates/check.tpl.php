@@ -16,10 +16,6 @@ function checkImageIf($cond)
 			<td>PDO-Treiber (mysql-Treiber installiert)</td>
 			<td><?=checkImageIf($tpl_pdo_active)?></td>
 		</tr>
-		<tr <?=(!$tpl_log_writable)?'class="danger"':''?>>
-			<td>log-Verzeichnis beschreibbar</td>
-			<td><?=checkImageIf($tpl_log_writable)?></td>
-		</tr>
 		<tr <?=(!$tpl_apache)?'class="danger"':''?>>
 			<td>Apache-Server (benötigt wegen mod_rewrite)</td>
 			<td><?=checkImageIf($tpl_apache)?></td>
