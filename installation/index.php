@@ -215,20 +215,22 @@ else if($_GET['step'] == 'db')
 				'prefix' => $_POST['dbprefix']
 			);
 			
-			// ToDo: create tables
+			
 			fillDB($database);
 			writeDefaultDBData($database);
 			
 			// Redirect to user settings
 			header('Location: ' . $_SERVER['PHP_SELF'] . '?step=user');
+			
 		}
 	}
 	else
 	{
 		$content_template = new Template('templates/dbform.tpl.php');
 		$template->set('step', 'db');
-		$template->set('content', $content_template->display(), $template->getNoEscapeFunc());	
-	}
+		$template->set('content', $content_template->display(), $template->getNoEscapeFunc());
+		
+	}	
 }
 elseif ($_GET['step'] == 'user') 
 {
