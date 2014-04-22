@@ -31,8 +31,19 @@ function writeDefaultDBData($connection)
 {
 	// Designconfig
 	$configTable = $connection->getTable('Config');
-	$configTable->addEntry(array('id' => 'activeDesign', 'value' => 'default2'));
-	$configTable->addEntry(array('id' => 'activeAdminDesign', 'value' => 'bootstrap'));
+	$configTable->addEntry(array('id' => 'activeDesign', 'value' => 'default_white_blue', 'module' => 'admin_designmanager'));
+	$configTable->addEntry(array('id' => 'activeAdminDesign', 'value' => 'bootstrap', 'module' => 'admin_designmanager'));
+	$configTable->addEntry(array('id' => 'activeCaptcha', 'value' => 'recaptcha', 'module' => 'mod_article'));
+	$configTable->addEntry(array('id' => 'comment_needApproval', 'value' => '1', 'module' => 'mod_article'));
+	$configTable->addEntry(array('id' => 'defaultRole', 'value' => 'public', 'module' => 'core'));
+	$configTable->addEntry(array('id' => 'footerContent', 'value' => 'FOOTER, CHANGE ME IN DB', 'module' => 'plugin_FooterContent'));
+	$configTable->addEntry(array('id' => 'recaptcha_privateKey', 'value' => '', 'module' => 'plugin_recaptcha'));
+	$configTable->addEntry(array('id' => 'recaptcha_publicKey', 'value' => '', 'module' => 'plugin_recaptcha'));
+	$configTable->addEntry(array('id' => 'recaptcha_theme', 'value' => 'clean', 'module' => 'plugin_recaptcha'));
+	$configTable->addEntry(array('id' => 'plugin_github_password', 'value' => '', 'module' => 'plugin_GithubEvents'));
+	$configTable->addEntry(array('id' => 'plugin_github_username', 'value' => '', 'module' => 'plugin_GithubEvents'));
+	
+	
 	
 	// Roles
 	$roleTable = $connection->getTable('Role');
@@ -51,6 +62,12 @@ function writeDefaultDBData($connection)
 	$rightTable->addEntry(array('id' => 'edit_user', 'name' => 'User bearbeiten', 'priority' => 0, 'module'=>'admin_user'));
 	$rightTable->addEntry(array('id' => 'delete_user', 'name' => 'User löschen', 'priority' => 0, 'module'=>'admin_user'));
 	$rightTable->addEntry(array('id' => 'add_user', 'name' => 'User hinzufügen', 'priority' => 0, 'module'=>'admin_user'));
+	$rightTable->addEntry(array('id' => 'comment_without_captcha', 'name' => 'Ein Kommentar ohne Captcha verfassen', 'priority' => 0, 'module'=>'mod_article'));
+	$rightTable->addEntry(array('id' => 'comment_see_unapproved', 'name' => 'Nicht freigeschaltete Beiträge sehen', 'priority' => 0, 'module'=>'mod_article'));
+	$rightTable->addEntry(array('id' => 'comment_edit_own', 'name' => 'Eigene Kommentare bearbeiten', 'priority' => 0, 'module'=>'mod_article'));
+	$rightTable->addEntry(array('id' => 'comment_edit', 'name' => 'Kommentare bearbeiten', 'priority' => 0, 'module'=>'mod_article'));
+	$rightTable->addEntry(array('id' => 'comment_delete', 'name' => 'Kommentare löschen', 'priority' => 0, 'module'=>'mod_article'));
+	$rightTable->addEntry(array('id' => 'comment_without_approval', 'name' => 'Die Kommentare werden automatisch freigeschalten', 'priority' => 0, 'module'=>'mod_article'));
 	
 	// Right to roles
 	$rtrTable = $connection->getTable('RightToRole');
@@ -72,6 +89,7 @@ function writeDefaultDBData($connection)
 	// Plugins
 	$pluginTable = $connection->getTable('Plugin');
 	$pluginTable->addEntry(array('name' => 'Loginform', 'box' => 'sidebarBox1'));
+	$pluginTable->addEntry(array('name' => 'FooterContent', 'box' => 'boxFooter'));
 }
 
 function createAdminUser($name, $pw, $email, $connection)
