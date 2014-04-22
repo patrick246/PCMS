@@ -94,6 +94,12 @@ class Role
 		return $has;
 	}
 	
+	public static function getDefaultRole(&$app)
+	{
+		$defaultRole = $app->database->Config->defaultRole->value;
+		return new Role($defaultRole, $app);
+	}
+	
 	/**
 	 * A reference to the application object
 	 * @var CMS

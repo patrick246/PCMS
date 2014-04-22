@@ -35,7 +35,7 @@ class Plugin_CaptchaManager
 			trigger_error('Captcha-Plugin nicht geladen!', E_USER_WARNING);
 			return false;
 		}
-		return $this->activeCaptchaPlugin->check();
+		return $this->activeCaptchaPlugin->checkCode();
 	}
 	
 	private $activeCaptchaPlugin;

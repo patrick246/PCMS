@@ -40,12 +40,22 @@ class CMS
 		{
 			$_SESSION['uid'] = 0;	// Set the userid = 0, means not logged in
 			$this->user = null;
+			$this->userRole = Role::getDefaultRole($this);
 		}
 		else
 		{
-			$this->user = $this->database->getTable('User')->idExists($_SESSION['uid']) ? $this->database->getTable('User')->{$_SESSION['uid']} : null;
+			if($this->database->User->idExists($_SESSION['uid']))
+			{
+				$this->user = new User($_SESSION['uid'], $this);
+				$this->userRole = $this->user->getRole();
+			}
+			else 
+			{
+				$this->user = null;
+				$this->userRole = Role::getDefaultRole($this);
+			}
 		}
-
+		
 		$this->menu = new Menu($this);
 		$this->captchaManager = new Plugin_CaptchaManager($this);
 	}
@@ -74,6 +84,11 @@ class CMS
 	 */
 	public $user;
 	
+	/**
+	 * @var Role
+	 */
+	public $userRole; 
+	 
 	/**
 	 * A class responsible for providing and checking Captchas
 	 * @var Plugin_CaptchaManager
