@@ -5,9 +5,9 @@
 - http://www.phpmyadmin.net
 -
 - Host: localhost
-- Generation Time: Mar 12, 2014 at 03:48 PM
+- Generation Time: Apr 22, 2014 at 08:01 PM
 - Server version: 5.5.35-0ubuntu0.13.10.2
-- PHP Version: 5.5.3-1ubuntu2.2
+- PHP Version: 5.5.3-1ubuntu2.3
 -->
 
 <pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
@@ -16,8 +16,8 @@
     -->
     <structure_schemas>
         <database name="cms" collation="latin1_swedish_ci" charset="latin1">
-            <table name="##prefix##AdminMenu">
-                CREATE TABLE `##prefix##AdminMenu` (
+            <table name="cmsv3_AdminMenu">
+                CREATE TABLE `cmsv3_AdminMenu` (
                   `id` int(11) NOT NULL AUTO_INCREMENT,
                   `link` varchar(250) NOT NULL,
                   `text` varchar(250) NOT NULL,
@@ -26,10 +26,10 @@
                   `type` varchar(25) NOT NULL,
                   `priority` int(11) NOT NULL,
                   PRIMARY KEY (`id`)
-                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+                ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
             </table>
-            <table name="##prefix##Article">
-                CREATE TABLE `##prefix##Article` (
+            <table name="cmsv3_Article">
+                CREATE TABLE `cmsv3_Article` (
                   `id` int(11) NOT NULL AUTO_INCREMENT,
                   `title` varchar(250) NOT NULL,
                   `url_title` varchar(50) NOT NULL,
@@ -39,18 +39,37 @@
                   `role` varchar(35) NOT NULL,
                   `hits` int(11) NOT NULL,
                   `time_last_changed` int(11) NOT NULL,
+                  `comments_disabled` tinyint(1) NOT NULL DEFAULT '0',
                   PRIMARY KEY (`id`)
-                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+                ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
             </table>
-            <table name="##prefix##Config">
-                CREATE TABLE `##prefix##Config` (
+            <table name="cmsv3_Comment">
+                CREATE TABLE `cmsv3_Comment` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `article` int(11) NOT NULL,
+                  `guestcomment` tinyint(1) NOT NULL,
+                  `user` int(11) DEFAULT NULL,
+                  `guest_name` varchar(250) DEFAULT NULL,
+                  `guest_website` varchar(250) DEFAULT NULL,
+                  `guest_email` varchar(250) DEFAULT NULL,
+                  `ip` varchar(45) NOT NULL,
+                  `content` text NOT NULL,
+                  `date_written` int(11) NOT NULL,
+                  `published` tinyint(1) NOT NULL,
+                  PRIMARY KEY (`id`),
+                  KEY `article` (`article`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+            </table>
+            <table name="cmsv3_Config">
+                CREATE TABLE `cmsv3_Config` (
                   `id` varchar(50) NOT NULL,
-                  `value` varchar(250) NOT NULL,
+                  `value` varchar(1000) NOT NULL,
+                  `module` varchar(200) NOT NULL,
                   PRIMARY KEY (`id`)
                 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
             </table>
-            <table name="##prefix##Menu">
-                CREATE TABLE `##prefix##Menu` (
+            <table name="cmsv3_Menu">
+                CREATE TABLE `cmsv3_Menu` (
                   `id` int(11) NOT NULL AUTO_INCREMENT,
                   `text` varchar(250) NOT NULL,
                   `link` varchar(250) NOT NULL,
@@ -59,18 +78,18 @@
                   `type` varchar(25) NOT NULL,
                   `priority` int(11) NOT NULL,
                   PRIMARY KEY (`id`)
-                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+                ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
             </table>
-            <table name="##prefix##Plugin">
-                CREATE TABLE `##prefix##Plugin` (
+            <table name="cmsv3_Plugin">
+                CREATE TABLE `cmsv3_Plugin` (
                   `id` int(11) NOT NULL AUTO_INCREMENT,
                   `name` varchar(250) NOT NULL,
                   `box` varchar(250) NOT NULL,
                   PRIMARY KEY (`id`)
-                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+                ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
             </table>
-            <table name="##prefix##Right">
-                CREATE TABLE `##prefix##Right` (
+            <table name="cmsv3_Right">
+                CREATE TABLE `cmsv3_Right` (
                   `id` varchar(35) NOT NULL,
                   `name` varchar(50) NOT NULL,
                   `priority` int(11) NOT NULL,
@@ -78,24 +97,24 @@
                   PRIMARY KEY (`id`)
                 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
             </table>
-            <table name="##prefix##RightToRole">
-                CREATE TABLE `##prefix##RightToRole` (
+            <table name="cmsv3_RightToRole">
+                CREATE TABLE `cmsv3_RightToRole` (
                   `id` int(11) NOT NULL AUTO_INCREMENT,
                   `role_id` varchar(50) NOT NULL,
                   `right_id` varchar(35) NOT NULL,
                   PRIMARY KEY (`id`)
-                ) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+                ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
             </table>
-            <table name="##prefix##Role">
-                CREATE TABLE `##prefix##Role` (
+            <table name="cmsv3_Role">
+                CREATE TABLE `cmsv3_Role` (
                   `id` varchar(50) NOT NULL,
                   `name` varchar(50) NOT NULL,
                   PRIMARY KEY (`id`),
                   UNIQUE KEY `key` (`id`)
                 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
             </table>
-            <table name="##prefix##User">
-                CREATE TABLE `##prefix##User` (
+            <table name="cmsv3_User">
+                CREATE TABLE `cmsv3_User` (
                   `id` int(11) NOT NULL AUTO_INCREMENT,
                   `name` varchar(50) NOT NULL,
                   `password` varchar(128) NOT NULL,
@@ -106,10 +125,10 @@
                   `last_action` int(11) NOT NULL,
                   `date_registered` int(11) NOT NULL,
                   PRIMARY KEY (`id`)
-                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+                ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
             </table>
-            <table name="##prefix##Visitor">
-                CREATE TABLE `##prefix##Visitor` (
+            <table name="cmsv3_Visitor">
+                CREATE TABLE `cmsv3_Visitor` (
                   `id` int(11) NOT NULL AUTO_INCREMENT,
                   `time_visited` int(11) NOT NULL,
                   `ip` varchar(40) NOT NULL,
@@ -117,7 +136,7 @@
                   `user_agent` varchar(250) NOT NULL,
                   `querystring` varchar(500) NOT NULL,
                   PRIMARY KEY (`id`)
-                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+                ) ENGINE=InnoDB AUTO_INCREMENT=1191 DEFAULT CHARSET=latin1;
             </table>
         </database>
     </structure_schemas>
