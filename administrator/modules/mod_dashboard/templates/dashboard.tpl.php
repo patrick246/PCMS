@@ -39,7 +39,7 @@
 			{
 		?>
 				<tr<?=($visitor->ip == $_SERVER['REMOTE_ADDR']|| $visitor->ip == "::1")?' class="success"':''?>>
-					<td><?=$visitor->id?></td><td><?=$visitor->ip?></td><td><?=date('d.M.Y H:i:s', $visitor->time_visited)?></td><td><?=$visitor->querystring?></td><td><?=$visitor->referrer?></td><td><?=$visitor->user_agent?></td>
+					<td><?=$visitor->id?></td><td><a href="http://<?=$visitor->ip?>.ipaddress.com/"><?=$visitor->ip?></a></td><td><?=date('d.M.Y H:i:s', $visitor->time_visited)?></td><td><?=$visitor->querystring?></td><td><?=$visitor->referrer?></td><td><?=$visitor->user_agent?></td>
 					
 				</tr>
 		<?php
