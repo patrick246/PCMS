@@ -126,6 +126,13 @@ class mod_article_controller extends Controller
 			$tpl->set('homepage', $homepage);
 			$tpl->set('date', $date);
 			$tpl->set('content', $comment->content);
+			$tpl->set('approved', $comment->published);
+			$tpl->set('can_approve', $this->app->userRole->hasRight('comment_approve'));
+			
+			// ToDo: Enable editing own comments
+			$tpl->set('can_edit', $this->app->userRole->hasRight('comment_edit'));
+			
+			$tpl->set('can_delete', $this->app->userRole->hasRight('comment_delete'));
 			$commentsStr .= $tpl->display();
 		}
 		return $commentsStr;
