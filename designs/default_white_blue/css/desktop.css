@@ -1,15 +1,17 @@
 /* Grid system */
 @import url('1000_4_20.css');
 
-.content
-{
-	padding-top: 100px;
-}
+
 
 .container
 {
-	width: 1000px;
+	width: 1400px;
 	margin: 0 auto;
+}
+
+.content
+{
+	margin-top: 100px;
 }
 
 /*  
@@ -107,7 +109,7 @@
 .navbar .navbar-nav > li > a:hover
 {
 	border-bottom: 10px solid #FF5C33;
-	color: #FF5C33;
+	color: #A12000;
 }
 
 
@@ -190,6 +192,7 @@
 {
 	background-color: white;
 	min-height: 100%;
+	overflow: auto;
 }
 
 footer

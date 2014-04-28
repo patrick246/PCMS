@@ -7,6 +7,7 @@ class Menu
 	 */
 	public function __construct(&$app, $mode = "user")
 	{
+		$this->mode = $mode;
 		// Load the menu data
 		if($mode == "admin")
 		{
@@ -29,7 +30,8 @@ class Menu
 		if($menuentry->type == 'dropdown')
 		{
 			$menuentry->link = '#';
-			$menuentry->text .= ' &#9662;';
+			if($this->mode == 'user')
+				$menuentry->text .= ' &#9662;';
 			$classMenuEntry = new MenuEntry($menuentry);
 			$subEntries = $this->table->find('parent', $menuentry->id, '=');
 			foreach ($subEntries as $subEntry)
@@ -53,6 +55,8 @@ class Menu
 	private $entries;
 	
 	private $table; 
+	
+	private $mode;
 }
 
 class MenuEntry

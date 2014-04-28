@@ -16,13 +16,13 @@ Learn more ~ http://www.gridsystemgenerator.com/
 
 /* gridframework */
 .row {position:relative; margin-left:-20px;}
-.gu1 .row {width: 255px;}
-.gu2 .row {width: 510px;}
-.gu3 .row {width: 765px;}
-.gu4 .row {width: 1020px;}
+.gu1 .row {width: 355px;}
+.gu2 .row {width: 710px;}
+.gu3 .row {width: 1065px;}
+.gu4 .row {width: 1420px;}
 
 .col {padding-left:20px; float:left; position:relative;}
-.gu1{width: 235px;}
-.gu2{width: 490px;}
-.gu3{width: 745px;}
-.gu4{width: 1000px;}
+.gu1{width: 335px;}
+.gu2{width: 690px;}
+.gu3{width: 1045px;}
+.gu4{width: 1400px;}
