@@ -21,7 +21,9 @@
 	</head>
 
 	<body>
-		<h1><?=$tpl_error_code?></h1>
-		<p><?=$tpl_error_description?></p>
+		<div class="error">
+			<h1><?=$tpl_error_code?></h1>
+			<p><?=$tpl_error_description?></p>
+		</div>
 	</body>
 </html>

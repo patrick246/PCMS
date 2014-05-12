@@ -74,21 +74,28 @@ a:hover
 
 
 /* Form styles */
-input, textarea
+input, textarea, button
 {
 	transition: border .5s;
 	margin-bottom: 15px;
+	background-color: white;
 }
 
-input:not([type='submit']), textarea
+input:not([type='submit']), textarea, button
 {
-	width: 100%;
+	display: block;
+	width: 90%;
 	border: 1px solid #ddd !important; 
 	padding: 5px;
 	
 }
 
-input:focus, input[type='submit']:hover, textarea:focus
+button
+{
+	width: 100%;
+}
+
+input:focus, input[type='submit']:hover, textarea:focus, button:hover
 {
 	border: 1px solid #66c2ff !important;
 }

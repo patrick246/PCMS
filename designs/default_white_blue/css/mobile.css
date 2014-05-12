@@ -12,8 +12,9 @@ body
 
 .navbar
 {
-	background-color: #0099FF;
 	padding: 5px;
+	border-bottom: 20px solid #0099FF;
+	margin-bottom: 50px;
 }
 
 .navbar ul
@@ -28,18 +29,22 @@ body
 
 .navbar ul li a
 {
-	color: white;
+	color: #333;
 }
 
 .navbar-brand
 {
-	font-weight: bold;
+	text-align: center;
+}
+
+.navbar-brand a
+{
+	font-weight: 100;
 	font-size: 20pt;
-	background-color: #0099FF;
-	color: white;
+	color: #444;
 	
 	padding: 5px;
-	border-bottom: 1px solid #333;
+	
 }
 
 .sidebox
@@ -68,4 +73,4 @@ footer h2
 footer ul
 {
 	list-style-type: none;
-}
+}l

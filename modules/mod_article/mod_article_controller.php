@@ -58,6 +58,7 @@ class mod_article_controller extends Controller
 		}
 		
 		
+		
 		$template = $this->fillArticleDetail($article);
 		
 		$article->hits++;

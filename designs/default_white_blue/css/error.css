@@ -1,9 +1,24 @@
-body 
+body
 {
-	background-color: #b2e0ff;
-	width: 500px;
+	background-color: #def;
+}
+
+.error 
+{
+	background-color: white;
+	width: 700px;
+	padding: 25px;
 	margin: auto;
+	margin-top: 50px;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	
+	border: 15px solid #0099FF;
+	transition: border .2s;
+}
+
+.error:hover
+{
+	border: 15px solid #FF5C33;
 }
 
 h1
