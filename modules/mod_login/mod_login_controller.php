@@ -4,9 +4,9 @@ class mod_login_controller extends Controller
 	public function show()
 	{
 		$page = new Page();
-		$template = new Template($this->app->workDir . 'modules/mod_login/templates/form.tpl.php');
+		$template = new Template($this->moduleBaseDir . 'templates/form.tpl.php');
 		$page->mainContent = $template->display();
-		$page->addCssFile(SUBDIR . 'modules/mod_login/css/form.css');
+		$page->addCssFile(URL_SUBDIR . 'modules/mod_login/css/form.css');
 		$page->title = 'Login';
 		return $page;
 	}

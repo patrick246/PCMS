@@ -1,0 +1,142 @@
+@viewport
+{
+	width: device-width;
+	zoom: 1;
+}
+
+@import url('desktop.css') (min-width: 1000px);
+@import url('mobile.css') (max-width: 999px);
+
+
+/* ### Element Styles ### */
+body, html
+{
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+	height: 100%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1
+{
+	font-size: 36px;
+	font-weight: 500;
+	color: #333;
+}
+
+h2
+{
+	font-weight: 500;
+	font-size: 32px;
+	color: #333;
+}
+
+h3
+{
+	font-weight: 500;
+	font-size: 28px;
+	color: #333;
+}
+
+h4
+{
+	font-weight: 500;
+	font-size: 24px;
+	color: #333;
+}
+
+hr
+{
+	border: none;
+	border-bottom: 1px solid #ddd;
+}
+
+/* Link styles */
+a
+{
+	color: #0077B3;
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+
+/* Form styles */
+input, textarea, button
+{
+	transition: border .5s;
+	margin-bottom: 15px;
+	background-color: white;
+}
+
+input:not([type='submit']), textarea, button
+{
+	display: block;
+	width: 90%;
+	border: 1px solid #ddd !important; 
+	padding: 5px;
+	
+}
+
+button
+{
+	width: 100%;
+}
+
+input:focus, input[type='submit']:hover, textarea:focus, button:hover
+{
+	border: 1px solid #66c2ff !important;
+}
+
+input[type='submit']
+{
+	border: 1px solid #ddd;
+	padding: 5px;
+	margin-top: 15px;
+}
+
+label
+{
+	font-weight: bold;
+}
+
+textarea
+{
+	resize: vertical;
+	height: 100px;
+	margin-bottom: 10px;
+}
+
+.form-control
+{
+	margin-bottom: 5px;
+}
+
+/* Alerts */
+.red_alert
+{
+	border: 2px solid #FF3333;
+	background-color: #FFC2B2;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+.green_alert
+{
+	border: 2px solid #00CC00;
+	background-color: #B2F0B2;
+	padding: 15px;
+	margin-bottom: 15px;
+}

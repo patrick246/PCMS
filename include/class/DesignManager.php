@@ -15,7 +15,7 @@ class DesignManager
 		$active = $configTable->activeDesign->value;
 		
 		// Build the path to the info class
-		$path = $app->workDir . 'designs' . '/' . $active . '/' . $active . '_info.php';
+		$path = PATH_SUBDIR . 'designs' . '/' . $active . '/' . $active . '_info.php';
 		$classname = $active.'_info';
 		if(file_exists($path))
 		{
@@ -30,7 +30,7 @@ class DesignManager
 		$this->info = new $classname;
 		
 		// Get the real template file
-		$tpl_file = $app->workDir . 'designs' . '/' . $active . '/';
+		$tpl_file = PATH_SUBDIR . 'designs' . '/' . $active . '/';
 		
 		if($error)
 		{

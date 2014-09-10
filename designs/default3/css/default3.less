@@ -1,0 +1,153 @@
+@base-color: lighten(#0099ff, 15%);
+
+
+body
+{
+	background-color: lighten(@base-color, 10%);
+	margin: 0;
+	padding: 0;
+
+	color: #333;
+}
+
+.clearfix {
+	zoom: 1;
+	&:before, &:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+::selection
+{
+	background-color: #eeeeee;
+}
+
+::-moz-selection
+{
+	background-color: #999;
+}
+
+header
+{
+	.clearfix;
+
+	background-color: white;
+	padding: 0;
+
+	border-bottom: 2px solid darken(@base-color, 25%);
+	box-shadow: 0px 0px 5px #333;
+
+	ul.nav
+	{
+		.clearfix;
+		margin: 0;
+		list-style-type: none;
+
+		li
+		{
+			float: left;
+			margin: 10px 0px 0 2px;
+			padding: 20px 5px 10px 5px;
+			a
+			{
+				text-decoration: none;
+				color: #333;
+				padding: 5px;
+
+				&:hover
+				{
+					color: white;
+					background-color: darken(@base-color, 30%);
+				}
+			}
+
+
+
+			&.brand
+			{
+
+			}
+		}
+	}
+
+}
+
+.brand
+{
+	font-weight: bold;
+}
+
+
+.main
+{
+	.clearfix;
+
+	width: 1000px;
+	margin: 35px auto;
+
+	.container
+	{
+		background-color: white;
+		box-shadow: 0px 0px 5px #333;
+
+		padding: 15px;
+
+		float: left;
+
+		width: 700px;
+
+		.aboveContent
+		{
+			margin-bottom: 15px;
+			padding-bottom: 15px;
+
+			border-bottom: 1px solid #ccc;
+
+			font-size: 11pt;
+		}
+
+		.content
+		{
+
+		}
+
+		.belowContent
+		{
+			margin-top: 15px;
+			padding-top: 15px;
+
+			border-top: 1px solid #ccc;
+
+			font-size: 11pt;
+		}
+	}
+
+	.side
+	{
+		float: right;
+		width: 250px;
+
+		.box
+		{
+			background-color: white;
+
+			min-height: 175px;
+			padding: 15px;
+			margin-bottom: 25px;
+
+			box-shadow: 0px 0px 5px #333;
+		}
+	}
+}
+
+footer
+{
+	margin: 0 auto;
+	width: 1000px;
+
+	font-size: 10pt;
+}

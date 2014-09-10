@@ -47,7 +47,7 @@ class plugin_GithubEvents extends Plugin_Plugin
 		{
 			if($i++ == 3)
 				break;
-			$template = new Template($this->app->workDir . 'plugins/content/plugin_GithubEvents/templates/github_entry.tpl.php');
+			$template = new Template(PATH_SUBDIR . 'plugins/content/plugin_GithubEvents/templates/github_entry.tpl.php');
 			$username = $event->actor->login;
 			switch ($event->type)
 			{

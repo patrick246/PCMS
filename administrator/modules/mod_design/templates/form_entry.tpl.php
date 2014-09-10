@@ -1,0 +1,14 @@
+<tr>
+	<td>
+		<?=$tpl_name?>
+	</td>
+	<td>
+		<?=$tpl_version?>
+	</td>
+	<td>
+		<?=$tpl_author?>
+	</td>
+	<td>
+		<?=$tpl_activated?>
+	</td>
+</tr>

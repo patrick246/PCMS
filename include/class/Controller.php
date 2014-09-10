@@ -5,7 +5,6 @@ class Controller
 	{
 		$this->app = &$app;
 		$this->moduleBaseDir = $moduleBaseDir;
-		$this->workingDir = $this->app->workDir;
 		$this->database = &$this->app->database;
 		
 		$this->construct();
@@ -24,12 +23,6 @@ class Controller
 	 * @var string
 	 */
 	protected $moduleBaseDir;
-	
-	/**
-	 * The directory the cms is installed in
-	 * @var string
-	 */
-	protected $workingDir;
 	
 	/**
 	 * A reference to the database connection

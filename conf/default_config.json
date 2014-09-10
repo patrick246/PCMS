@@ -1,0 +1,31 @@
+{
+	"database":
+	{
+		"host":     "Your Host",
+		"username": "Your Username",
+		"password": "Your Password",
+		"prefix":   "Your table prefix"
+	},
+	"directories":
+	{
+		"modules":  "modules/"
+	},
+	"routing":
+	{
+		"default_controller":
+		{
+			"frontend":
+			{
+				"name":     "article",
+				"method":   "all",
+				"params":   [1]
+			},
+			"backend":
+			{
+				"name":     "dashboard",
+				"method":   "show",
+				"params":   []
+			}
+		}
+	}
+}

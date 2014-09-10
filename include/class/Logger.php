@@ -51,7 +51,7 @@ class Logger
 		};
 		
 		// Now open the file
-		/*$this->res = fopen($this->app->workDir . $destfile, "a");
+		/*$this->res = fopen(PATH_SUBDIR . $destfile, "a");
 		if(!$this->res)
 			die("Logger can't open destination file");*/
 		

@@ -6,20 +6,20 @@ class Dispatcher
 	 * @param CMS $app
 	 * @return Page
 	 */
-	public static function dispatch(&$app, $moduleDir = Config::MODULE_DIR, $mode = "user")
+	public static function dispatch(&$app, $moduleDir = null, $mode = "user")
 	{
 		$querystr = $_SERVER['QUERY_STRING'];
 		// If there is no query string, work with the default values
 		if(strlen($querystr) == 0)
 		{
-			$classname = Config::DEFAULT_CONTROLLER;
-			$method = Config::DEFAULT_CONTROLLER_METHOD;
-			$params = Config::$DEFAULT_CONTROLLER_PARAMS;
+			$classname = $app->config->routing->default_controller->frontend->name;
+			$method = $app->config->routing->default_controller->frontend->method;
+			$params = $app->config->routing->default_controller->frontend->params;
 			if($mode == "admin")
 			{
-				$classname = Config::DEFAULT_CONTROLLER_ADMIN;
-				$method = Config::DEFAULT_CONTROLLER_ADMIN_METHOD;
-				$params = Config::$DEFAULT_CONTROLLER_ADMIN_PARAMS;
+				$classname = $app->config->routing->default_controller->backend->name;
+				$method = $app->config->routing->default_controller->backend->method;
+				$params = $app->config->routing->default_controller->backend->params;
 			}
 		}
 		else if($querystr == 'admin')

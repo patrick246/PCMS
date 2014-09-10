@@ -12,7 +12,7 @@ class Database_Connection
 	 * @param string $password
 	 * @param string $database
 	 */
-	public function __construct(&$app, $host, $username, $password, $database, $dbprefix = Config::DBPREFIX, $catchException = true) 
+	public function __construct(&$app, $host, $username, $password, $database, $dbprefix = null, $catchException = true)
 	{
 		$this->app = &$app;
 		$this->prefix = $dbprefix;

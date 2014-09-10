@@ -16,46 +16,17 @@ class CMS
 	 * @access public
 	 * @since 1.0
 	 */
-	public function __construct($workDir)
+	public function __construct()
 	{
 		// Set default timezone
 		date_default_timezone_set('Europe/Berlin');
-		
-		// Set the main include dir
-		$this->workDir = $workDir.'/';
-		
-		// First thing to do is initializing the logger as all other classes constructors rely on it
-		$this->logger = new Logger($this, "log/log.txt");
-		$this->logger->debug = true;
-		
-		// Now we load every function inside the include/functions folders
-		require_once $this->workDir.'include/functions/functions.php';
-		loadAllFunctions($this);
-		
-		// Then we set up the database connection
-		$this->database = new Database_Connection($this, Config::DBHOST, Config::DBUSERNAME, Config::DBPASSWORD, Config::DBNAME);
-	
-		// Set up the session
-		if(!isset($_SESSION['uid']))
-		{
-			$_SESSION['uid'] = 0;	// Set the userid = 0, means not logged in
-			$this->user = null;
-			$this->userRole = Role::getDefaultRole($this);
-		}
-		else
-		{
-			if($this->database->User->idExists($_SESSION['uid']))
-			{
-				$this->user = new User($_SESSION['uid'], $this);
-				$this->userRole = $this->user->getRole();
-			}
-			else 
-			{
-				$this->user = null;
-				$this->userRole = Role::getDefaultRole($this);
-			}
-		}
-		
+
+		$this->loadConfig();
+		$this->loadAllFunctions();
+		$this->initDBConnection();
+		$this->initSession();
+
+
 		$this->menu = new Menu($this);
 		$this->captchaManager = new Plugin_CaptchaManager($this);
 	}
@@ -94,15 +65,21 @@ class CMS
 	 * @var Plugin_CaptchaManager
 	 */
 	public $captchaManager;
+
+	/**
+	 * The config as deserialized JSON file
+	 * @var stdClass
+	 */
+	public $config;
 	
 	/* Methods */
 	public function run() 
 	{
 		$this->updateUserActive();
 		$this->updateVisitors();
-		$page = Dispatcher::dispatch($this);
-		$designmgr = new DesignManager($this, $page->errorCode);
-		$designmgr->display($page);
+		$page = Dispatcher::dispatch($this, $this->config->directories->modules);
+		$designmanager = new DesignManager($this, $page->errorCode);
+		$designmanager->display($page);
 	}
 	
 	private function updateUserActive()
@@ -133,6 +110,48 @@ class CMS
 						'user_agent' => $user_agent,
 						'querystring' => $query_str
 					));
+		}
+	}
+
+	private function loadConfig()
+	{
+		$configFile = file_get_contents(PATH_SUBDIR . 'conf/config.json');
+		if (!$configFile) {
+			header("Location: " . URL_SUBDIR . 'installation/');
+			die();
+		}
+
+		$this->config = json_decode($configFile);
+	}
+
+	private function loadAllFunctions()
+	{
+		// Now we load every function inside the include/functions folders
+		require_once PATH_SUBDIR . 'include/functions/functions.php';
+		loadAllFunctions($this);
+	}
+
+	private function initDBConnection()
+	{
+		// Then we set up the database connection
+		$this->database = new Database_Connection($this, $this->config->database->host, $this->config->database->username, $this->config->database->password, $this->config->database->dbname, $this->config->database->prefix);
+	}
+
+	private function initSession()
+	{
+		// Set up the session
+		if (!isset($_SESSION['uid'])) {
+			$_SESSION['uid'] = 0; // Set the userid = 0, means not logged in
+			$this->user = null;
+			$this->userRole = Role::getDefaultRole($this);
+		} else {
+			if ($this->database->User->idExists($_SESSION['uid'])) {
+				$this->user = new User($_SESSION['uid'], $this);
+				$this->userRole = $this->user->getRole();
+			} else {
+				$this->user = null;
+				$this->userRole = Role::getDefaultRole($this);
+			}
 		}
 	}
 }

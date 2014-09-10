@@ -5,7 +5,7 @@
  */
 function loadAllFunctions(&$app)
 {
-	$files = scandir($app->workDir.'include/functions/');
+	$files = scandir(PATH_SUBDIR . 'include/functions/');
 	$files = array_diff($files, array('.', '..'));
 	foreach($files as $file)
 	{

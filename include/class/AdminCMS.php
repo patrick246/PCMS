@@ -6,15 +6,18 @@ class AdminCMS
 		// Set default timezone
 		date_default_timezone_set('Europe/Berlin');
 		
-		require_once $this->workDir.'include/functions/functions.php';
+		require_once PATH_SUBDIR . 'include/functions/functions.php';
 		loadAllFunctions($this);
+
+		$configFile = file_get_contents(PATH_SUBDIR . 'conf/config.json');
+		if(!$configFile)
+		{
+			header('Location: /' . URL_SUBDIR . 'installation');
+			die();
+		}
+		$this->config = json_decode($configFile);
 		
-		$this->workDir = $workingDir;
-		
-		$this->logger = new Logger($this, "/log/admin_log.txt");
-		$this->logger->debug = true;
-		
-		$this->database = new Database_Connection($this, Config::DBHOST, Config::DBUSERNAME, Config::DBPASSWORD, Config::DBNAME);
+		$this->database = new Database_Connection($this, $this->config->database->host, $this->config->database->username, $this->config->database->password, $this->config->database->dbname, $this->config->database->prefix);
 		
 		$this->menu = new Menu($this, 'admin');
 
@@ -58,13 +61,6 @@ class AdminCMS
 	 * @var Logger
 	 */
 	public $logger;
-	
-	/**
-	 * The work dir is the directory we are running in.
-	 * It has a trailing slash!
-	 * @var string
-	 */
-	public $workDir;
 	
 	/**
 	 * An instance of the menu class

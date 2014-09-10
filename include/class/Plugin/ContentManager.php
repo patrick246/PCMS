@@ -21,7 +21,7 @@ class Plugin_ContentManager
 		
 		foreach ($allPluginsForBox as $pluginEntry) {
 			$pluginName = $pluginEntry->name;
-			$path = $this->app->workDir . 'plugins/content/plugin_' . $pluginName . '/plugin_' . $pluginName . '.php';
+			$path = PATH_SUBDIR . 'plugins/content/plugin_' . $pluginName . '/plugin_' . $pluginName . '.php';
 			if(!file_exists($path))
 			{
 				trigger_error("Plugin file does not exist: " . $path . ', ' . $pluginName, E_USER_WARNING);

@@ -6,7 +6,7 @@ class mod_dashboard_controller extends Controller
 		$page = new Page();
 		$page->addCssFile(URL_SUBDIR . 'administrator/modules/mod_dashboard/css/mod_dashboard_main.css');
 		
-		$tpl = new Template($this->app->workDir . '/administrator/modules/mod_dashboard/templates/dashboard.tpl.php');
+		$tpl = new Template(PATH_SUBDIR . '/administrator/modules/mod_dashboard/templates/dashboard.tpl.php');
 		
 		$table = $this->app->database->getTable("User");
 		$entries = $table->find('last_action', time() - 5*60, '>=');

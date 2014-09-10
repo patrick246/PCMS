@@ -12,7 +12,7 @@ class mod_article_controller extends Controller
 		foreach($entries as $entry)
 		{
 			$user = $this->app->database->getTable("User")->{$entry->author_id};
-			$tpl = new Template($this->app->workDir . Config::MODULE_DIR . 'mod_article/template/article_entry.tpl.php');
+			$tpl = new Template($this->moduleBaseDir . 'template/article_entry.tpl.php');
 			$tpl->set('id', $entry->id);
 			$tpl->set('author', $user->name);
 			
@@ -26,7 +26,7 @@ class mod_article_controller extends Controller
 		}
 		$page->title = "Alle Artikel";
 		$page->addMeta("author", '', "name");
-		$page->addCssFile(URL_SUBDIR .  Config::MODULE_DIR . "mod_article/template/article_entry.css");
+		$page->addCssFile($this->moduleBaseDir . "template/article_entry.css");
 		return $page;
 	}
 	

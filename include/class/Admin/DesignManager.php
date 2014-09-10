@@ -14,7 +14,7 @@ class Admin_DesignManager
 		$active = $configTable->activeAdminDesign->value;
 		
 		// Build the path to the info class
-		$path = $app->workDir . '/' . 'administrator' . '/' .'designs' . '/' . $active . '/' . $active . '_info.php';
+		$path = PATH_SUBDIR . '/administrator/designs/' . $active . '/' . $active . '_info.php';
 		$classname = $active.'_info';
 		if(file_exists($path))
 		{
@@ -29,7 +29,7 @@ class Admin_DesignManager
 		$this->info = new $classname;
 		
 		// Get the real template file
-		$tpl_file = $app->workDir . '/' . 'administrator' . '/' . 'designs' . '/' . $active . '/';
+		$tpl_file = PATH_SUBDIR . '/administrator/designs/' . $active . '/';
 		if($error)
 		{
 			$tpl_file .= $this->info->getErrorTemplateFile();
